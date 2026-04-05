@@ -1,8 +1,143 @@
 ---
 title: "Redux Integration"
-description: "Using ReplykeIntegrationProvider with an existing Redux store"
+description: "Merge Replyke's Redux state into your existing store using ReplykeIntegrationProvider"
 ---
 
-# Redux Integration
+By default, `ReplykeProvider` creates and manages its own isolated Redux store. This is the recommended approach for most projects — no Redux configuration required.
 
-*Coming soon*
+If your application already has its own Redux store, you can merge Replyke's state into it instead. This avoids having two separate stores and lets you access Replyke state from your existing Redux tooling.
+
+## When to Use This
+
+Use `ReplykeIntegrationProvider` (integration mode) when:
+
+- Your application already uses Redux Toolkit with a configured store
+- You want to access Replyke state from your own selectors or middleware
+- You need a single Redux DevTools instance that shows all state
+
+Use `ReplykeProvider` (standalone mode, the default) when:
+
+- You don't use Redux, or you don't need to share state between Replyke and your own store
+- You want zero Redux configuration
+
+## Setup
+
+Integration mode requires three changes to your existing store and one change to your provider setup.
+
+<Steps>
+  <Step title="Add Replyke reducers to your store">
+    Import `replykeReducers` and `replykeApiReducer` from `@replyke/react-js` and add them to your store's `reducer` map. The keys must be exactly `replyke` and `replykeApi` — the SDK's internal selectors depend on these names.
+
+    ```ts
+    import { configureStore } from "@reduxjs/toolkit";
+    import {
+      replykeReducers,
+      replykeApiReducer,
+      replykeMiddleware,
+    } from "@replyke/react-js";
+    import yourReducer from "./yourSlice";
+
+    const store = configureStore({
+      reducer: {
+        // Your own reducers
+        yourFeature: yourReducer,
+
+        // Replyke — keys must be exactly these
+        replyke: replykeReducers,
+        replykeApi: replykeApiReducer,
+      },
+      middleware: (getDefaultMiddleware) =>
+        getDefaultMiddleware().concat(...replykeMiddleware),
+    });
+
+    export default store;
+    export type RootState = ReturnType<typeof store.getState>;
+    export type AppDispatch = typeof store.dispatch;
+    ```
+  </Step>
+
+  <Step title="Replace ReplykeProvider with ReplykeIntegrationProvider">
+    Use `ReplykeIntegrationProvider` instead of `ReplykeProvider`. This provider does not create a Redux store — it expects your own `<Provider>` to already be in the tree above it.
+
+    ```tsx
+    import { Provider } from "react-redux";
+    import { ReplykeIntegrationProvider } from "@replyke/react-js";
+    import store from "./store";
+
+    function App() {
+      return (
+        <Provider store={store}>
+          <ReplykeIntegrationProvider projectId="your-project-id">
+            {/* your app */}
+          </ReplykeIntegrationProvider>
+        </Provider>
+      );
+    }
+    ```
+  </Step>
+</Steps>
+
+## Props
+
+`ReplykeIntegrationProvider` accepts the same props as `ReplykeProvider`:
+
+<ParamField body="projectId" type="string" required>
+  Your Replyke project ID.
+</ParamField>
+
+<ParamField body="signedToken" type="string | null">
+  A signed JWT for external authentication mode. See [External Auth](/sdk/authentication/external).
+</ParamField>
+
+## Exports Reference
+
+All integration exports are available from `@replyke/react-js`:
+
+| Export | Type | Purpose |
+|--------|------|---------|
+| `replykeReducers` | `Reducer` | Combined reducer for all Replyke feature slices. Mount under the `replyke` key. |
+| `replykeApiReducer` | `Reducer` | RTK Query API reducer. Mount under the `replykeApi` key. |
+| `replykeApiMiddleware` | `Middleware` | RTK Query middleware for cache invalidation and subscriptions. |
+| `replykeMiddleware` | `Middleware[]` | Combined array of all required Replyke middleware. Spread into your middleware chain. |
+| `ReplykeIntegrationProvider` | `React.FC` | Context provider for integration mode. |
+
+## State Shape
+
+When integrated, Replyke occupies two top-level keys in your store:
+
+```ts
+{
+  replyke: {
+    auth: { ... },          // Auth tokens, current user, initialization state
+    accounts: { ... },      // Multi-account list and active account
+    user: { ... },          // Current user profile
+    appNotifications: { ... },
+    collections: { ... },
+    entityLists: { ... },
+    spaceLists: { ... },
+    chat: { ... },
+  },
+  replykeApi: { ... },      // RTK Query cache (collections, entity lists, etc.)
+  
+  // Your own slices
+  yourFeature: { ... },
+}
+```
+
+<Note>
+  The `replyke` and `replykeApi` keys are required by Replyke's internal selectors. Mounting the reducers under different keys will cause the SDK to malfunction.
+</Note>
+
+## TypeScript
+
+Replyke exports `ReplykeState` if you need to type a state slice that references Replyke's shape:
+
+```ts
+import type { ReplykeState } from "@replyke/react-js";
+
+interface RootState {
+  replyke: ReplykeState;
+  replykeApi: unknown; // RTK Query manages this type internally
+  yourFeature: YourFeatureState;
+}
+```

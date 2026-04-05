@@ -19,16 +19,16 @@
 
 ## SDK Reference — Setup
 
-- [ ] sdk/getting-started.mdx
-- [ ] sdk/redux-integration.mdx
+- [x] sdk/getting-started.mdx
+- [x] sdk/redux-integration.mdx
 
 ## SDK Reference — Authentication
 
-- [ ] sdk/authentication/overview.mdx
-- [ ] sdk/authentication/built-in.mdx
-- [ ] sdk/authentication/external.mdx
-- [ ] sdk/authentication/oauth.mdx
-- [ ] sdk/authentication/multi-account.mdx
+- [x] sdk/authentication/overview.mdx
+- [x] sdk/authentication/built-in.mdx
+- [x] sdk/authentication/external.mdx
+- [x] sdk/authentication/oauth.mdx
+- [x] sdk/authentication/multi-account.mdx
 
 ## SDK Reference — Current User
 
@@ -113,14 +113,14 @@
 
 ## Hooks Reference — Auth
 
-- [ ] hooks/auth/use-auth.mdx
-- [ ] hooks/auth/use-accounts.mdx
-- [ ] hooks/auth/use-add-account.mdx
-- [ ] hooks/auth/use-remove-account.mdx
-- [ ] hooks/auth/use-switch-account.mdx
-- [ ] hooks/auth/use-sign-out-all.mdx
-- [ ] hooks/auth/use-oauth-identities.mdx
-- [ ] hooks/auth/use-request-password-reset.mdx
+- [x] hooks/auth/use-auth.mdx
+- [x] hooks/auth/use-accounts.mdx
+- [x] hooks/auth/use-add-account.mdx
+- [x] hooks/auth/use-remove-account.mdx
+- [x] hooks/auth/use-switch-account.mdx
+- [x] hooks/auth/use-sign-out-all.mdx
+- [x] hooks/auth/use-oauth-identities.mdx
+- [x] hooks/auth/use-request-password-reset.mdx
 
 ## Hooks Reference — Chat: Conversations
 
@@ -320,21 +320,21 @@
 
 ## API Reference — Auth
 
-- [ ] api-reference/auth/sign-up.mdx
-- [ ] api-reference/auth/sign-in.mdx
-- [ ] api-reference/auth/sign-out.mdx
-- [ ] api-reference/auth/change-password.mdx
-- [ ] api-reference/auth/request-access-token.mdx
-- [ ] api-reference/auth/verify-external-user.mdx
-- [ ] api-reference/auth/request-password-reset.mdx
-- [ ] api-reference/auth/reset-password.mdx
+- [x] api-reference/auth/sign-up.mdx
+- [x] api-reference/auth/sign-in.mdx
+- [x] api-reference/auth/sign-out.mdx
+- [x] api-reference/auth/change-password.mdx
+- [x] api-reference/auth/request-access-token.mdx
+- [x] api-reference/auth/verify-external-user.mdx
+- [x] api-reference/auth/request-password-reset.mdx
+- [x] api-reference/auth/reset-password.mdx
 
 ## API Reference — OAuth
 
-- [ ] api-reference/oauth/authorize.mdx
-- [ ] api-reference/oauth/link.mdx
-- [ ] api-reference/oauth/list-identities.mdx
-- [ ] api-reference/oauth/unlink-identity.mdx
+- [x] api-reference/oauth/authorize.mdx
+- [x] api-reference/oauth/link.mdx
+- [x] api-reference/oauth/list-identities.mdx
+- [x] api-reference/oauth/unlink-identity.mdx
 
 ## API Reference — Users
 
