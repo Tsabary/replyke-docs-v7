@@ -10,12 +10,12 @@
 
 ## Overview
 
-- [ ] index.mdx
-- [ ] integration-options.mdx
-- [ ] authentication.mdx
-- [ ] webhooks.mdx
-- [ ] semantic-search-ai.mdx
-- [ ] mcp-server.mdx
+- [x] index.mdx
+- [x] integration-options.mdx
+- [x] authentication.mdx
+- [x] webhooks.mdx
+- [x] semantic-search-ai.mdx
+- [x] mcp-server.mdx
 
 ## SDK Reference — Setup
 
