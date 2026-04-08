@@ -969,7 +969,7 @@ All hooks live in `monorepo/packages/core/src/hooks/`.
 | `useConversation` | Fetch and manage a single conversation's data |
 | `useCreateDirectConversation` | Get or create a DM conversation with another user |
 | `useConversationMembers` | List and manage members of a conversation |
-| `useSpaceConversation` | Get or create the chat conversation for a space |
+| `useFetchSpaceConversation` | Get or create the chat conversation for a space |
 
 ---
 

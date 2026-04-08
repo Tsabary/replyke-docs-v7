@@ -5,20 +5,15 @@ description: "Merge Replyke's Redux state into your existing store using Replyke
 
 By default, `ReplykeProvider` creates and manages its own isolated Redux store. This is the recommended approach for most projects — no Redux configuration required.
 
-If your application already has its own Redux store, you can merge Replyke's state into it instead. This avoids having two separate stores and lets you access Replyke state from your existing Redux tooling.
+If your application already has its own Redux store, we strongly recommend merging Replyke's state into it using `ReplykeIntegrationProvider`. Running two separate Redux stores in the same React app is a common source of subtle bugs: React-Redux binds components to the nearest `<Provider>` in the tree, so hooks can silently read from the wrong store depending on where components are rendered.
 
 ## When to Use This
 
-Use `ReplykeIntegrationProvider` (integration mode) when:
+**If your app already has a Redux store, use `ReplykeIntegrationProvider`.** This is the right path for virtually every app in that situation. The standalone `ReplykeProvider` is only appropriate for apps that don't use Redux at all.
 
-- Your application already uses Redux Toolkit with a configured store
-- You want to access Replyke state from your own selectors or middleware
-- You need a single Redux DevTools instance that shows all state
+The standalone provider creates its own internal store. When that coexists with your app's store, React-Redux binds components to whichever `<Provider>` is closest in the tree — which means hooks silently read from the wrong store depending on where a component is rendered. These bugs are hard to spot and hard to trace.
 
-Use `ReplykeProvider` (standalone mode, the default) when:
-
-- You don't use Redux, or you don't need to share state between Replyke and your own store
-- You want zero Redux configuration
+The only reason to use `ReplykeProvider` alongside an existing Redux store is if you have a specific, deliberate reason to keep the two stores completely separate and you fully understand the implications. For nearly everyone, that's not the case.
 
 ## Setup
 

@@ -80,20 +80,21 @@ After wrapping with `ReplykeProvider`, users are unauthenticated by default. You
 
 ## Checking Auth State
 
-Use the `useAuth` hook to access the current user's authentication state anywhere inside `ReplykeProvider`:
+Use the `useAuth` hook for auth actions and `useUser` to access the current user anywhere inside `ReplykeProvider`:
 
 ```tsx
-import { useAuth } from "@replyke/react-js";
+import { useAuth, useUser } from "@replyke/react-js";
 
 function Header() {
-  const { initialized, currentUser, signOut } = useAuth();
+  const { initialized, signOut } = useAuth();
+  const { user } = useUser();
 
   if (!initialized) return <p>Loading...</p>;
-  if (!currentUser) return <p>Not signed in.</p>;
+  if (!user) return <p>Not signed in.</p>;
 
   return (
     <div>
-      <p>Signed in as {currentUser.username}</p>
+      <p>Signed in as {user.username}</p>
       <button onClick={() => signOut()}>Sign out</button>
     </div>
   );
@@ -108,7 +109,7 @@ function Header() {
 
 `ReplykeProvider` automatically creates and manages an isolated Redux store. You do not need to configure Redux to use Replyke.
 
-If your application already has its own Redux store and you want to merge them, see [Redux Integration](/sdk/redux-integration) for how to use `ReplykeIntegrationProvider` instead.
+If your application already has its own Redux store, we strongly recommend using `ReplykeIntegrationProvider` instead — running two separate Redux stores in the same app is a common source of subtle bugs. See [Redux Integration](/sdk/redux-integration) for setup details.
 
 ## What's Next
 

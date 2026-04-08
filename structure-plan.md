@@ -210,7 +210,7 @@ One page per hook. Format: purpose, parameters, return values, usage notes.
 | `hooks/chat/conversations/use-conversation.mdx` | `useConversation` | NEW |
 | `hooks/chat/conversations/use-create-direct-conversation.mdx` | `useCreateDirectConversation` | NEW |
 | `hooks/chat/conversations/use-conversation-members.mdx` | `useConversationMembers` | NEW |
-| `hooks/chat/conversations/use-space-conversation.mdx` | `useSpaceConversation` | NEW |
+| `hooks/chat/conversations/use-fetch-space-conversation.mdx` | `useFetchSpaceConversation` | NEW |
 
 ### Group: Chat — Messages
 

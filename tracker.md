@@ -32,52 +32,52 @@
 
 ## SDK Reference — Current User
 
-- [ ] sdk/current-user/overview.mdx
+- [x] sdk/current-user/overview.mdx
 
 ## SDK Reference — User Profiles
 
-- [ ] sdk/user-profiles/overview.mdx
+- [x] sdk/user-profiles/overview.mdx
 
 ## SDK Reference — Entities
 
-- [ ] sdk/entities/overview.mdx
-- [ ] sdk/entities/provider-and-hook.mdx
-- [ ] sdk/entities/drafts-and-publishing.mdx
+- [x] sdk/entities/overview.mdx
+- [x] sdk/entities/provider-and-hook.mdx
+- [x] sdk/entities/drafts-and-publishing.mdx
 
 ## SDK Reference — Entity Lists
 
-- [ ] sdk/entity-lists/overview.mdx
-- [ ] sdk/entity-lists/fetch-entities.mdx
-- [ ] sdk/entity-lists/infuse-data.mdx
-- [ ] sdk/entity-lists/filters.mdx
+- [x] sdk/entity-lists/overview.mdx
+- [x] sdk/entity-lists/fetch-entities.mdx
+- [x] sdk/entity-lists/infuse-data.mdx
+- [x] sdk/entity-lists/filters.mdx
 
 ## SDK Reference — Comments
 
-- [ ] sdk/comments/overview.mdx
-- [ ] sdk/comments/comment-section.mdx
+- [x] sdk/comments/overview.mdx
+- [x] sdk/comments/comment-section.mdx
 
 ## SDK Reference — Reactions
 
-- [ ] sdk/reactions/overview.mdx
+- [x] sdk/reactions/overview.mdx
 
 ## SDK Reference — Spaces
 
-- [ ] sdk/spaces/overview.mdx
-- [ ] sdk/spaces/provider-and-hook.mdx
-- [ ] sdk/spaces/membership.mdx
-- [ ] sdk/spaces/moderation.mdx
-- [ ] sdk/spaces/rules.mdx
-- [ ] sdk/spaces/digest-newsletter.mdx
-- [ ] sdk/spaces/space-lists.mdx
+- [x] sdk/spaces/overview.mdx
+- [x] sdk/spaces/provider-and-hook.mdx
+- [x] sdk/spaces/membership.mdx
+- [x] sdk/spaces/moderation.mdx
+- [x] sdk/spaces/rules.mdx
+- [x] sdk/spaces/digest-newsletter.mdx
+- [x] sdk/spaces/space-lists.mdx
 
 ## SDK Reference — Chat
 
-- [ ] sdk/chat/overview.mdx
-- [ ] sdk/chat/setup.mdx
-- [ ] sdk/chat/conversations.mdx
-- [ ] sdk/chat/messages.mdx
-- [ ] sdk/chat/real-time.mdx
-- [ ] sdk/chat/threads.mdx
+- [x] sdk/chat/overview.mdx
+- [x] sdk/chat/setup.mdx
+- [x] sdk/chat/conversations.mdx
+- [x] sdk/chat/messages.mdx
+- [x] sdk/chat/real-time.mdx
+- [x] sdk/chat/threads.mdx
 
 ## SDK Reference — Collections
 
@@ -124,29 +124,29 @@
 
 ## Hooks Reference — Chat: Conversations
 
-- [ ] hooks/chat/conversations/use-conversations.mdx
-- [ ] hooks/chat/conversations/use-conversation.mdx
-- [ ] hooks/chat/conversations/use-create-direct-conversation.mdx
-- [ ] hooks/chat/conversations/use-conversation-members.mdx
-- [ ] hooks/chat/conversations/use-space-conversation.mdx
+- [x] hooks/chat/conversations/use-conversations.mdx
+- [x] hooks/chat/conversations/use-conversation.mdx
+- [x] hooks/chat/conversations/use-create-direct-conversation.mdx
+- [x] hooks/chat/conversations/use-conversation-members.mdx
+- [x] hooks/chat/conversations/use-space-conversation.mdx
 
 ## Hooks Reference — Chat: Messages
 
-- [ ] hooks/chat/messages/use-chat-messages.mdx
-- [ ] hooks/chat/messages/use-send-message.mdx
-- [ ] hooks/chat/messages/use-edit-message.mdx
-- [ ] hooks/chat/messages/use-delete-message.mdx
-- [ ] hooks/chat/messages/use-toggle-reaction.mdx
-- [ ] hooks/chat/messages/use-message-thread.mdx
+- [x] hooks/chat/messages/use-chat-messages.mdx
+- [x] hooks/chat/messages/use-send-message.mdx
+- [x] hooks/chat/messages/use-edit-message.mdx
+- [x] hooks/chat/messages/use-delete-message.mdx
+- [x] hooks/chat/messages/use-toggle-reaction.mdx
+- [x] hooks/chat/messages/use-message-thread.mdx
 
 ## Hooks Reference — Chat: Core
 
-- [ ] hooks/chat/use-chat-socket.mdx
-- [ ] hooks/chat/use-mark-conversation-as-read.mdx
-- [ ] hooks/chat/use-report-message.mdx
-- [ ] hooks/chat/use-total-unread-count.mdx
-- [ ] hooks/chat/use-typing-indicator.mdx
-- [ ] hooks/chat/use-unread-conversation-count.mdx
+- [x] hooks/chat/use-chat-socket.mdx
+- [x] hooks/chat/use-mark-conversation-as-read.mdx
+- [x] hooks/chat/use-report-message.mdx
+- [x] hooks/chat/use-total-unread-count.mdx
+- [x] hooks/chat/use-typing-indicator.mdx
+- [x] hooks/chat/use-unread-conversation-count.mdx
 
 ## Hooks Reference — Collections
 
@@ -157,15 +157,15 @@
 
 ## Hooks Reference — Comments
 
-- [ ] hooks/comments/use-comment-section.mdx
-- [ ] hooks/comments/use-entity-comments.mdx
-- [ ] hooks/comments/use-replies.mdx
-- [ ] hooks/comments/use-create-comment.mdx
-- [ ] hooks/comments/use-update-comment.mdx
-- [ ] hooks/comments/use-delete-comment.mdx
-- [ ] hooks/comments/use-fetch-comment.mdx
-- [ ] hooks/comments/use-fetch-comment-by-foreign-id.mdx
-- [ ] hooks/comments/use-fetch-many-comments.mdx
+- [x] hooks/comments/use-comment-section.mdx
+- [x] hooks/comments/use-entity-comments.mdx
+- [x] hooks/comments/use-replies.mdx
+- [x] hooks/comments/use-create-comment.mdx
+- [x] hooks/comments/use-update-comment.mdx
+- [x] hooks/comments/use-delete-comment.mdx
+- [x] hooks/comments/use-fetch-comment.mdx
+- [x] hooks/comments/use-fetch-comment-by-foreign-id.mdx
+- [x] hooks/comments/use-fetch-many-comments.mdx
 
 ## Hooks Reference — Crypto
 
@@ -173,31 +173,31 @@
 
 ## Hooks Reference — Entities
 
-- [ ] hooks/entities/use-entity.mdx
-- [ ] hooks/entities/use-fetch-entity.mdx
-- [ ] hooks/entities/use-fetch-entity-by-foreign-id.mdx
-- [ ] hooks/entities/use-fetch-entity-by-short-id.mdx
-- [ ] hooks/entities/use-fetch-many-entities.mdx
-- [ ] hooks/entities/use-create-entity.mdx
-- [ ] hooks/entities/use-update-entity.mdx
-- [ ] hooks/entities/use-delete-entity.mdx
-- [ ] hooks/entities/use-fetch-drafts.mdx
-- [ ] hooks/entities/use-publish-draft.mdx
-- [ ] hooks/entities/use-increment-entity-views.mdx
+- [x] hooks/entities/use-entity.mdx
+- [x] hooks/entities/use-fetch-entity.mdx
+- [x] hooks/entities/use-fetch-entity-by-foreign-id.mdx
+- [x] hooks/entities/use-fetch-entity-by-short-id.mdx
+- [x] hooks/entities/use-fetch-many-entities.mdx
+- [x] hooks/entities/use-create-entity.mdx
+- [x] hooks/entities/use-update-entity.mdx
+- [x] hooks/entities/use-delete-entity.mdx
+- [x] hooks/entities/use-fetch-drafts.mdx
+- [x] hooks/entities/use-publish-draft.mdx
+- [x] hooks/entities/use-increment-entity-views.mdx
 
 ## Hooks Reference — Entity Lists
 
-- [ ] hooks/entity-lists/use-entity-list.mdx
-- [ ] hooks/entity-lists/use-entity-list-actions.mdx
-- [ ] hooks/entity-lists/use-infused-data.mdx
+- [x] hooks/entity-lists/use-entity-list.mdx
+- [x] hooks/entity-lists/use-entity-list-actions.mdx
+- [x] hooks/entity-lists/use-infused-data.mdx
 
 ## Hooks Reference — Reactions
 
-- [ ] hooks/reactions/use-add-reaction.mdx
-- [ ] hooks/reactions/use-remove-reaction.mdx
-- [ ] hooks/reactions/use-reaction-toggle.mdx
-- [ ] hooks/reactions/use-fetch-entity-reactions.mdx
-- [ ] hooks/reactions/use-fetch-comment-reactions.mdx
+- [x] hooks/reactions/use-add-reaction.mdx
+- [x] hooks/reactions/use-remove-reaction.mdx
+- [x] hooks/reactions/use-reaction-toggle.mdx
+- [x] hooks/reactions/use-fetch-entity-reactions.mdx
+- [x] hooks/reactions/use-fetch-comment-reactions.mdx
 
 ## Hooks Reference — Follows
 
@@ -251,48 +251,48 @@
 
 ## Hooks Reference — Spaces
 
-- [ ] hooks/spaces/use-space.mdx
-- [ ] hooks/spaces/use-fetch-space.mdx
-- [ ] hooks/spaces/use-fetch-space-by-short-id.mdx
-- [ ] hooks/spaces/use-fetch-space-by-slug.mdx
-- [ ] hooks/spaces/use-fetch-many-spaces.mdx
-- [ ] hooks/spaces/use-fetch-user-spaces.mdx
-- [ ] hooks/spaces/use-fetch-space-children.mdx
-- [ ] hooks/spaces/use-fetch-space-breadcrumb.mdx
-- [ ] hooks/spaces/use-fetch-space-members.mdx
-- [ ] hooks/spaces/use-fetch-space-team.mdx
-- [ ] hooks/spaces/use-check-my-membership.mdx
-- [ ] hooks/spaces/use-check-slug-availability.mdx
-- [ ] hooks/spaces/use-create-space.mdx
-- [ ] hooks/spaces/use-update-space.mdx
-- [ ] hooks/spaces/use-delete-space.mdx
-- [ ] hooks/spaces/use-join-space.mdx
-- [ ] hooks/spaces/use-leave-space.mdx
-- [ ] hooks/spaces/use-approve-member.mdx
-- [ ] hooks/spaces/use-decline-member.mdx
-- [ ] hooks/spaces/use-remove-member.mdx
-- [ ] hooks/spaces/use-update-member-role.mdx
-- [ ] hooks/spaces/use-unban-member.mdx
-- [ ] hooks/spaces/use-moderate-space-entity.mdx
-- [ ] hooks/spaces/use-moderate-space-comment.mdx
-- [ ] hooks/spaces/use-space-mentions.mdx
-- [ ] hooks/spaces/use-space-permissions.mdx
-- [ ] hooks/spaces/use-fetch-digest-config.mdx
-- [ ] hooks/spaces/use-update-digest-config.mdx
+- [x] hooks/spaces/use-space.mdx
+- [x] hooks/spaces/use-fetch-space.mdx
+- [x] hooks/spaces/use-fetch-space-by-short-id.mdx
+- [x] hooks/spaces/use-fetch-space-by-slug.mdx
+- [x] hooks/spaces/use-fetch-many-spaces.mdx
+- [x] hooks/spaces/use-fetch-user-spaces.mdx
+- [x] hooks/spaces/use-fetch-space-children.mdx
+- [x] hooks/spaces/use-fetch-space-breadcrumb.mdx
+- [x] hooks/spaces/use-fetch-space-members.mdx
+- [x] hooks/spaces/use-fetch-space-team.mdx
+- [x] hooks/spaces/use-check-my-membership.mdx
+- [x] hooks/spaces/use-check-slug-availability.mdx
+- [x] hooks/spaces/use-create-space.mdx
+- [x] hooks/spaces/use-update-space.mdx
+- [x] hooks/spaces/use-delete-space.mdx
+- [x] hooks/spaces/use-join-space.mdx
+- [x] hooks/spaces/use-leave-space.mdx
+- [x] hooks/spaces/use-approve-member.mdx
+- [x] hooks/spaces/use-decline-member.mdx
+- [x] hooks/spaces/use-remove-member.mdx
+- [x] hooks/spaces/use-update-member-role.mdx
+- [x] hooks/spaces/use-unban-member.mdx
+- [x] hooks/spaces/use-moderate-space-entity.mdx
+- [x] hooks/spaces/use-moderate-space-comment.mdx
+- [x] hooks/spaces/use-space-mentions.mdx
+- [x] hooks/spaces/use-space-permissions.mdx
+- [x] hooks/spaces/use-fetch-digest-config.mdx
+- [x] hooks/spaces/use-update-digest-config.mdx
 
 ## Hooks Reference — Spaces: Rules
 
-- [ ] hooks/spaces/rules/use-fetch-many-rules.mdx
-- [ ] hooks/spaces/rules/use-fetch-rule.mdx
-- [ ] hooks/spaces/rules/use-create-rule.mdx
-- [ ] hooks/spaces/rules/use-update-rule.mdx
-- [ ] hooks/spaces/rules/use-delete-rule.mdx
-- [ ] hooks/spaces/rules/use-reorder-rules.mdx
+- [x] hooks/spaces/rules/use-fetch-many-rules.mdx
+- [x] hooks/spaces/rules/use-fetch-rule.mdx
+- [x] hooks/spaces/rules/use-create-rule.mdx
+- [x] hooks/spaces/rules/use-update-rule.mdx
+- [x] hooks/spaces/rules/use-delete-rule.mdx
+- [x] hooks/spaces/rules/use-reorder-rules.mdx
 
 ## Hooks Reference — Space Lists
 
-- [ ] hooks/space-lists/use-space-list.mdx
-- [ ] hooks/space-lists/use-space-list-actions.mdx
+- [x] hooks/space-lists/use-space-list.mdx
+- [x] hooks/space-lists/use-space-list-actions.mdx
 
 ## Hooks Reference — Storage
 
@@ -301,17 +301,17 @@
 
 ## Hooks Reference — Current User
 
-- [ ] hooks/user/use-user.mdx
-- [ ] hooks/user/use-user-actions.mdx
+- [x] hooks/user/use-user.mdx
+- [x] hooks/user/use-user-actions.mdx
 
 ## Hooks Reference — User Profiles
 
-- [ ] hooks/users/use-fetch-user.mdx
-- [ ] hooks/users/use-fetch-user-by-foreign-id.mdx
-- [ ] hooks/users/use-fetch-user-by-username.mdx
-- [ ] hooks/users/use-fetch-user-suggestions.mdx
-- [ ] hooks/users/use-check-username-availability.mdx
-- [ ] hooks/users/use-user-mentions.mdx
+- [x] hooks/users/use-fetch-user.mdx
+- [x] hooks/users/use-fetch-user-by-foreign-id.mdx
+- [x] hooks/users/use-fetch-user-by-username.mdx
+- [x] hooks/users/use-fetch-user-suggestions.mdx
+- [x] hooks/users/use-check-username-availability.mdx
+- [x] hooks/users/use-user-mentions.mdx
 
 ## API Reference — Getting Started
 
@@ -420,33 +420,33 @@
 
 ## API Reference — Chat: Conversations
 
-- [ ] api-reference/chat/conversations/list-conversations.mdx
-- [ ] api-reference/chat/conversations/create-group.mdx
-- [ ] api-reference/chat/conversations/create-direct.mdx
-- [ ] api-reference/chat/conversations/unread-count.mdx
-- [ ] api-reference/chat/conversations/fetch-conversation.mdx
-- [ ] api-reference/chat/conversations/update-conversation.mdx
-- [ ] api-reference/chat/conversations/delete-conversation.mdx
+- [x] api-reference/chat/conversations/list-conversations.mdx
+- [x] api-reference/chat/conversations/create-group.mdx
+- [x] api-reference/chat/conversations/create-direct.mdx
+- [x] api-reference/chat/conversations/unread-count.mdx
+- [x] api-reference/chat/conversations/fetch-conversation.mdx
+- [x] api-reference/chat/conversations/update-conversation.mdx
+- [x] api-reference/chat/conversations/delete-conversation.mdx
 
 ## API Reference — Chat: Members
 
-- [ ] api-reference/chat/members/list-members.mdx
-- [ ] api-reference/chat/members/add-member.mdx
-- [ ] api-reference/chat/members/remove-member.mdx
-- [ ] api-reference/chat/members/leave-conversation.mdx
-- [ ] api-reference/chat/members/update-member-role.mdx
+- [x] api-reference/chat/members/list-members.mdx
+- [x] api-reference/chat/members/add-member.mdx
+- [x] api-reference/chat/members/remove-member.mdx
+- [x] api-reference/chat/members/leave-conversation.mdx
+- [x] api-reference/chat/members/update-member-role.mdx
 
 ## API Reference — Chat: Messages
 
-- [ ] api-reference/chat/messages/list-messages.mdx
-- [ ] api-reference/chat/messages/send-message.mdx
-- [ ] api-reference/chat/messages/fetch-message.mdx
-- [ ] api-reference/chat/messages/edit-message.mdx
-- [ ] api-reference/chat/messages/delete-message.mdx
-- [ ] api-reference/chat/messages/toggle-reaction.mdx
-- [ ] api-reference/chat/messages/fetch-reaction-users.mdx
-- [ ] api-reference/chat/messages/mark-as-read.mdx
-- [ ] api-reference/chat/messages/report-message.mdx
+- [x] api-reference/chat/messages/list-messages.mdx
+- [x] api-reference/chat/messages/send-message.mdx
+- [x] api-reference/chat/messages/fetch-message.mdx
+- [x] api-reference/chat/messages/edit-message.mdx
+- [x] api-reference/chat/messages/delete-message.mdx
+- [x] api-reference/chat/messages/toggle-reaction.mdx
+- [x] api-reference/chat/messages/fetch-reaction-users.mdx
+- [x] api-reference/chat/messages/mark-as-read.mdx
+- [x] api-reference/chat/messages/report-message.mdx
 
 ## API Reference — Collections
 
@@ -481,54 +481,54 @@
 
 ## API Reference — Spaces
 
-- [ ] api-reference/spaces/create-space.mdx
-- [ ] api-reference/spaces/fetch-spaces.mdx
-- [ ] api-reference/spaces/fetch-space.mdx
-- [ ] api-reference/spaces/fetch-space-by-short-id.mdx
-- [ ] api-reference/spaces/fetch-space-by-slug.mdx
-- [ ] api-reference/spaces/fetch-user-spaces.mdx
-- [ ] api-reference/spaces/check-slug.mdx
-- [ ] api-reference/spaces/update-space.mdx
-- [ ] api-reference/spaces/delete-space.mdx
-- [ ] api-reference/spaces/fetch-children.mdx
-- [ ] api-reference/spaces/fetch-breadcrumb.mdx
-- [ ] api-reference/spaces/digest/fetch-digest-config.mdx
-- [ ] api-reference/spaces/digest/update-digest-config.mdx
+- [x] api-reference/spaces/create-space.mdx
+- [x] api-reference/spaces/fetch-spaces.mdx
+- [x] api-reference/spaces/fetch-space.mdx
+- [x] api-reference/spaces/fetch-space-by-short-id.mdx
+- [x] api-reference/spaces/fetch-space-by-slug.mdx
+- [x] api-reference/spaces/fetch-user-spaces.mdx
+- [x] api-reference/spaces/check-slug.mdx
+- [x] api-reference/spaces/update-space.mdx
+- [x] api-reference/spaces/delete-space.mdx
+- [x] api-reference/spaces/fetch-children.mdx
+- [x] api-reference/spaces/fetch-breadcrumb.mdx
+- [x] api-reference/spaces/digest/fetch-digest-config.mdx
+- [x] api-reference/spaces/digest/update-digest-config.mdx
 
 ## API Reference — Space Membership
 
-- [ ] api-reference/spaces/membership/join-space.mdx
-- [ ] api-reference/spaces/membership/leave-space.mdx
-- [ ] api-reference/spaces/membership/check-my-membership.mdx
-- [ ] api-reference/spaces/membership/list-members.mdx
-- [ ] api-reference/spaces/membership/list-team.mdx
-- [ ] api-reference/spaces/membership/approve-member.mdx
-- [ ] api-reference/spaces/membership/decline-member.mdx
-- [ ] api-reference/spaces/membership/ban-member.mdx
-- [ ] api-reference/spaces/membership/unban-member.mdx
-- [ ] api-reference/spaces/membership/update-member-role.mdx
+- [x] api-reference/spaces/membership/join-space.mdx
+- [x] api-reference/spaces/membership/leave-space.mdx
+- [x] api-reference/spaces/membership/check-my-membership.mdx
+- [x] api-reference/spaces/membership/list-members.mdx
+- [x] api-reference/spaces/membership/list-team.mdx
+- [x] api-reference/spaces/membership/approve-member.mdx
+- [x] api-reference/spaces/membership/decline-member.mdx
+- [x] api-reference/spaces/membership/ban-member.mdx
+- [x] api-reference/spaces/membership/unban-member.mdx
+- [x] api-reference/spaces/membership/update-member-role.mdx
 
 ## API Reference — Space Rules
 
-- [ ] api-reference/spaces/rules/list-rules.mdx
-- [ ] api-reference/spaces/rules/fetch-rule.mdx
-- [ ] api-reference/spaces/rules/create-rule.mdx
-- [ ] api-reference/spaces/rules/update-rule.mdx
-- [ ] api-reference/spaces/rules/delete-rule.mdx
-- [ ] api-reference/spaces/rules/reorder-rules.mdx
+- [x] api-reference/spaces/rules/list-rules.mdx
+- [x] api-reference/spaces/rules/fetch-rule.mdx
+- [x] api-reference/spaces/rules/create-rule.mdx
+- [x] api-reference/spaces/rules/update-rule.mdx
+- [x] api-reference/spaces/rules/delete-rule.mdx
+- [x] api-reference/spaces/rules/reorder-rules.mdx
 
 ## API Reference — Space Moderation
 
-- [ ] api-reference/spaces/moderation/moderate-entity.mdx
-- [ ] api-reference/spaces/moderation/moderate-comment.mdx
-- [ ] api-reference/spaces/moderation/moderate-message.mdx
-- [ ] api-reference/spaces/moderation/handle-entity-report.mdx
-- [ ] api-reference/spaces/moderation/handle-comment-report.mdx
-- [ ] api-reference/spaces/moderation/handle-message-report.mdx
+- [x] api-reference/spaces/moderation/moderate-entity.mdx
+- [x] api-reference/spaces/moderation/moderate-comment.mdx
+- [x] api-reference/spaces/moderation/moderate-message.mdx
+- [x] api-reference/spaces/moderation/handle-entity-report.mdx
+- [x] api-reference/spaces/moderation/handle-comment-report.mdx
+- [x] api-reference/spaces/moderation/handle-message-report.mdx
 
 ## API Reference — Space Chat
 
-- [ ] api-reference/spaces/chat/get-space-conversation.mdx
+- [x] api-reference/spaces/chat/get-space-conversation.mdx
 
 ## API Reference — Storage
 
@@ -550,11 +550,11 @@
 - [ ] data-models/user.mdx
 - [ ] data-models/entity.mdx
 - [ ] data-models/comment.mdx
-- [ ] data-models/space.mdx
-- [ ] data-models/space-member.mdx
-- [ ] data-models/conversation.mdx
-- [ ] data-models/conversation-member.mdx
-- [ ] data-models/chat-message.mdx
+- [x] data-models/space.mdx
+- [x] data-models/space-member.mdx
+- [x] data-models/conversation.mdx
+- [x] data-models/conversation-member.mdx
+- [x] data-models/chat-message.mdx
 - [ ] data-models/collection.mdx
 - [ ] data-models/rule.mdx
 - [ ] data-models/reaction.mdx

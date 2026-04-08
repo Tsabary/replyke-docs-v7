@@ -101,6 +101,7 @@ function App() {
 import { ReplykeIntegrationProvider } from "@replyke/react-js";
 
 function App() {
+  // Fetch or derive the signed JWT from your own auth system
   const signedToken = useMyAuthSystem().replykeJwt;
 
   return (
