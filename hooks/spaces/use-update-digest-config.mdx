@@ -1,8 +1,63 @@
 ---
-title: "useUpdateDigestConfig"
-description: "Update the digest configuration for a space"
+title: "Update digest config"
+description: "Update the digest/newsletter configuration for a space"
+icon: "plug"
 ---
 
-# useUpdateDigestConfig
+## Overview
 
-*Coming soon*
+`useUpdateDigestConfig` returns a callable function for updating a space's digest configuration. Only space admins can update this. All fields are optional — only provided fields are updated.
+
+## Usage Example
+
+```tsx
+import { useUpdateDigestConfig } from "@replyke/react-js";
+
+function DigestSettings({ spaceId }: { spaceId: string }) {
+  const updateDigestConfig = useUpdateDigestConfig();
+
+  const handleSave = async () => {
+    await updateDigestConfig({
+      spaceId,
+      digestEnabled: true,
+      digestWebhookUrl: "https://your-server.com/hooks/digest",
+      digestScheduleHour: 8,
+      digestTimezone: "Europe/London",
+    });
+  };
+}
+```
+
+## Parameters
+
+<ParamField path="spaceId" type="string" required>
+  UUID of the space.
+</ParamField>
+
+<ParamField path="digestEnabled" type="boolean">
+  Enable or disable digest delivery.
+</ParamField>
+
+<ParamField path="digestWebhookUrl" type="string | null">
+  URL to POST digest payloads to. Pass `null` to clear.
+</ParamField>
+
+<ParamField path="digestWebhookSecret" type="string | null">
+  Secret for verifying webhook authenticity. Pass `null` to clear.
+</ParamField>
+
+<ParamField path="digestScheduleHour" type="number">
+  UTC hour (0–23) for delivery. Pass `null` to clear.
+</ParamField>
+
+<ParamField path="digestTimezone" type="string">
+  IANA timezone string. Pass `null` to clear.
+</ParamField>
+
+## Returns
+
+<ResponseField name="message" type="string">
+  Confirmation message.
+</ResponseField>
+
+For integration guidance, see [Digest & Newsletter](/sdk/spaces/digest-newsletter).

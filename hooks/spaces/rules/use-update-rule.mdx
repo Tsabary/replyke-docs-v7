@@ -1,8 +1,46 @@
 ---
-title: "useUpdateRule"
-description: "Update an existing rule"
+title: "Update rule"
+description: "Update an existing community rule"
+icon: "plug"
 ---
 
-# useUpdateRule
+## Overview
 
-*Coming soon*
+`useUpdateRule` returns a callable function for updating a rule's title or description. Only space admins can update rules.
+
+## Usage Example
+
+```tsx
+import { useUpdateRule } from "@replyke/react-js";
+
+function EditRuleForm({ spaceId, ruleId }: { spaceId: string; ruleId: string }) {
+  const updateRule = useUpdateRule();
+
+  const handleSave = async (title: string, description: string) => {
+    const updated = await updateRule({ spaceId, ruleId, title, description });
+    console.log("Updated:", updated.title);
+  };
+}
+```
+
+## Parameters
+
+<ParamField path="spaceId" type="string" required>
+  UUID of the space.
+</ParamField>
+
+<ParamField path="ruleId" type="string" required>
+  UUID of the rule to update.
+</ParamField>
+
+<ParamField path="title" type="string">
+  Updated title.
+</ParamField>
+
+<ParamField path="description" type="string | null">
+  Updated description. Pass `null` to clear.
+</ParamField>
+
+## Returns
+
+The updated Rule object.
