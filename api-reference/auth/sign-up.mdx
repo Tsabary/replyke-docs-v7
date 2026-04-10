@@ -148,6 +148,25 @@ On success, returns HTTP `201` with:
       "code": "auth/file-too-large"
     }
     ```
+    Also returned with `"Banner image exceeds 50MB limit."` for the banner file.
+  </Accordion>
+  <Accordion title="Invalid Image — 422">
+    ```json
+    {
+      "error": "Avatar file is not a valid image: ...",
+      "code": "auth/invalid-image"
+    }
+    ```
+    Returned when the uploaded file cannot be parsed as an image. Also returned for the banner file with `"Banner file is not a valid image: ..."`.
+  </Accordion>
+  <Accordion title="Missing Image Options — 400">
+    ```json
+    {
+      "error": "Image options are required when uploading an avatar. Must include mode property.",
+      "code": "auth/missing-image-options"
+    }
+    ```
+    Returned when `avatarFile` or `bannerFile` is uploaded without the corresponding `.options` field.
   </Accordion>
   <Accordion title="Validation Failed — 400">
     ```json
