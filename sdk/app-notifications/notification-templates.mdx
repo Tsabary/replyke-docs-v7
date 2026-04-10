@@ -100,6 +100,7 @@ Each key in `notificationTemplates` corresponds to one notification type. The va
 | `newFollow` | `new-follow` | `initiatorName`, `initiatorUsername` |
 | `connectionRequest` | `connection-request` | `initiatorName`, `initiatorUsername` |
 | `connectionAccepted` | `connection-accepted` | `initiatorName`, `initiatorUsername` |
+| `spaceMembershipApproved` | `space-membership-approved` | `spaceName`, `spaceShortId`, `spaceSlug` |
 
 <Note>
   All template keys are optional. If a template is not provided for a given notification type, Replyke uses a built-in default string template for that type. You only need to supply the keys you want to customize.
