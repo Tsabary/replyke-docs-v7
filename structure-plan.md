@@ -90,8 +90,8 @@ A developer building a comment section reads SDK > Comments for the overall appr
 
 | File | Description | Class | v6 ref |
 |------|-------------|-------|--------|
-| `sdk/entities/overview.mdx` | What entities are: the core content unit (posts, articles, pages) around which comments, votes, reactions, and views attach. The `EntityProvider` pattern — wrapping a piece of content to give its subtree full entity state and actions. How votes, reactions, and view increments work. | UPDATED | `docs/sdk/entities/overview.mdx` |
-| `sdk/entities/provider-and-hook.mdx` | Setting up `EntityProvider` by entity ID, foreign ID, short ID, or a full entity object passed directly. Using `useEntity` to access all entity data and trigger actions (vote, react, increment views, update, delete) from context anywhere in the subtree. | UPDATED | `docs/sdk/entities/provider-and-hook.mdx` |
+| `sdk/entities/overview.mdx` | What entities are: the core content unit (posts, articles, pages) around which comments, votes, reactions, and views attach. The `EntityProvider` pattern — wrapping a piece of content to give its subtree full entity state and actions. How votes, reactions work. Views are auto-incremented on fetch. | UPDATED | `docs/sdk/entities/overview.mdx` |
+| `sdk/entities/provider-and-hook.mdx` | Setting up `EntityProvider` by entity ID, foreign ID, short ID, or a full entity object passed directly. Using `useEntity` to access all entity data and trigger actions (vote, react, update, delete) from context anywhere in the subtree. | UPDATED | `docs/sdk/entities/provider-and-hook.mdx` |
 | `sdk/entities/drafts-and-publishing.mdx` | Creating draft entities (`isDraft: true` on create), listing the current user's drafts with `useFetchDrafts`, publishing a draft with `usePublishDraft`. Use cases: scheduled publishing, content review workflows. | NEW | — |
 
 ### Group: Entity Lists
@@ -277,7 +277,6 @@ One page per hook. Format: purpose, parameters, return values, usage notes.
 | `hooks/entities/use-delete-entity.mdx` | `useDeleteEntity` | CARRY-OVER |
 | `hooks/entities/use-fetch-drafts.mdx` | `useFetchDrafts` | NEW |
 | `hooks/entities/use-publish-draft.mdx` | `usePublishDraft` | NEW |
-| `hooks/entities/use-increment-entity-views.mdx` | `useIncrementEntityViews` | CARRY-OVER |
 
 ### Group: Entity Lists
 
@@ -542,7 +541,6 @@ One page per hook. Format: purpose, parameters, return values, usage notes.
 | `api-reference/entities/add-reaction.mdx` | `POST /entities/:entityId/reactions` | NEW | — |
 | `api-reference/entities/remove-reaction.mdx` | `DELETE /entities/:entityId/reactions` | NEW | — |
 | `api-reference/entities/fetch-reactions.mdx` | `GET /entities/:entityId/reactions` | NEW | — |
-| `api-reference/entities/increment-views.mdx` | `PATCH /entities/:entityId/increment-views` | CARRY-OVER | `docs/api-reference/entities/increment-entity-views.mdx` |
 
 ### Group: Comment Endpoints
 

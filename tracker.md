@@ -81,35 +81,35 @@
 
 ## SDK Reference — Collections
 
-- [ ] sdk/collections/overview.mdx
-- [ ] sdk/collections/managing-collections.mdx
+- [x] sdk/collections/overview.mdx
+- [x] sdk/collections/managing-collections.mdx
 
 ## SDK Reference — Relationships
 
-- [ ] sdk/relationships/overview.mdx
-- [ ] sdk/relationships/use-follow-manager.mdx
-- [ ] sdk/relationships/use-connection-manager.mdx
+- [x] sdk/relationships/overview.mdx
+- [x] sdk/relationships/use-follow-manager.mdx
+- [x] sdk/relationships/use-connection-manager.mdx
 
 ## SDK Reference — App Notifications
 
-- [ ] sdk/app-notifications/overview.mdx
-- [ ] sdk/app-notifications/hook.mdx
-- [ ] sdk/app-notifications/notification-templates.mdx
-- [ ] sdk/app-notifications/webhook-integration.mdx
+- [x] sdk/app-notifications/overview.mdx
+- [x] sdk/app-notifications/hook.mdx
+- [x] sdk/app-notifications/notification-templates.mdx
+- [x] sdk/app-notifications/webhook-integration.mdx
 
 ## SDK Reference — Search & AI
 
-- [ ] sdk/search/overview.mdx
-- [ ] sdk/search/semantic-search.mdx
-- [ ] sdk/search/ask.mdx
+- [x] sdk/search/overview.mdx
+- [x] sdk/search/semantic-search.mdx
+- [x] sdk/search/ask.mdx
 
 ## SDK Reference — Storage
 
-- [ ] sdk/storage/overview.mdx
+- [x] sdk/storage/overview.mdx
 
 ## SDK Reference — Moderation
 
-- [ ] sdk/moderation/overview.mdx
+- [x] sdk/moderation/overview.mdx
 
 ## Hooks Reference — Auth
 
@@ -121,6 +121,8 @@
 - [x] hooks/auth/use-sign-out-all.mdx
 - [x] hooks/auth/use-oauth-identities.mdx
 - [x] hooks/auth/use-request-password-reset.mdx
+- [x] hooks/auth/use-send-verification-email.mdx
+- [x] hooks/auth/use-verify-email.mdx
 
 ## Hooks Reference — Chat: Conversations
 
@@ -150,10 +152,10 @@
 
 ## Hooks Reference — Collections
 
-- [ ] hooks/collections/use-collections.mdx
-- [ ] hooks/collections/use-collections-actions.mdx
-- [ ] hooks/collections/use-collection-entities-wrapper.mdx
-- [ ] hooks/collections/use-is-entity-saved.mdx
+- [x] hooks/collections/use-collections.mdx
+- [x] hooks/collections/use-collections-actions.mdx
+- [x] hooks/collections/use-collection-entities-wrapper.mdx
+- [x] hooks/collections/use-is-entity-saved.mdx
 
 ## Hooks Reference — Comments
 
@@ -169,7 +171,7 @@
 
 ## Hooks Reference — Crypto
 
-- [ ] hooks/crypto/use-sign-testing-jwt.mdx
+- [x] hooks/crypto/use-sign-testing-jwt.mdx
 
 ## Hooks Reference — Entities
 
@@ -183,7 +185,6 @@
 - [x] hooks/entities/use-delete-entity.mdx
 - [x] hooks/entities/use-fetch-drafts.mdx
 - [x] hooks/entities/use-publish-draft.mdx
-- [x] hooks/entities/use-increment-entity-views.mdx
 
 ## Hooks Reference — Entity Lists
 
@@ -201,53 +202,53 @@
 
 ## Hooks Reference — Follows
 
-- [ ] hooks/follows/use-follow-manager.mdx
-- [ ] hooks/follows/use-follow-user.mdx
-- [ ] hooks/follows/use-unfollow-by-follow-id.mdx
-- [ ] hooks/follows/use-unfollow-user-by-user-id.mdx
-- [ ] hooks/follows/use-fetch-follow-status.mdx
-- [ ] hooks/follows/use-fetch-followers.mdx
-- [ ] hooks/follows/use-fetch-followers-by-user-id.mdx
-- [ ] hooks/follows/use-fetch-followers-count.mdx
-- [ ] hooks/follows/use-fetch-followers-count-by-user-id.mdx
-- [ ] hooks/follows/use-fetch-following.mdx
-- [ ] hooks/follows/use-fetch-following-by-user-id.mdx
-- [ ] hooks/follows/use-fetch-following-count.mdx
-- [ ] hooks/follows/use-fetch-following-count-by-user-id.mdx
+- [x] hooks/follows/use-follow-manager.mdx
+- [x] hooks/follows/use-follow-user.mdx
+- [x] hooks/follows/use-unfollow-by-follow-id.mdx
+- [x] hooks/follows/use-unfollow-user-by-user-id.mdx
+- [x] hooks/follows/use-fetch-follow-status.mdx
+- [x] hooks/follows/use-fetch-followers.mdx
+- [x] hooks/follows/use-fetch-followers-by-user-id.mdx
+- [x] hooks/follows/use-fetch-followers-count.mdx
+- [x] hooks/follows/use-fetch-followers-count-by-user-id.mdx
+- [x] hooks/follows/use-fetch-following.mdx
+- [x] hooks/follows/use-fetch-following-by-user-id.mdx
+- [x] hooks/follows/use-fetch-following-count.mdx
+- [x] hooks/follows/use-fetch-following-count-by-user-id.mdx
 
 ## Hooks Reference — Connections
 
-- [ ] hooks/connections/use-connection-manager.mdx
-- [ ] hooks/connections/use-request-connection.mdx
-- [ ] hooks/connections/use-accept-connection.mdx
-- [ ] hooks/connections/use-decline-connection.mdx
-- [ ] hooks/connections/use-remove-connection.mdx
-- [ ] hooks/connections/use-remove-connection-by-user-id.mdx
-- [ ] hooks/connections/use-fetch-connections.mdx
-- [ ] hooks/connections/use-fetch-connections-by-user-id.mdx
-- [ ] hooks/connections/use-fetch-connections-count.mdx
-- [ ] hooks/connections/use-fetch-connections-count-by-user-id.mdx
-- [ ] hooks/connections/use-fetch-connection-status.mdx
-- [ ] hooks/connections/use-fetch-sent-pending-connections.mdx
-- [ ] hooks/connections/use-fetch-received-pending-connections.mdx
+- [x] hooks/connections/use-connection-manager.mdx
+- [x] hooks/connections/use-request-connection.mdx
+- [x] hooks/connections/use-accept-connection.mdx
+- [x] hooks/connections/use-decline-connection.mdx
+- [x] hooks/connections/use-remove-connection.mdx
+- [x] hooks/connections/use-remove-connection-by-user-id.mdx
+- [x] hooks/connections/use-fetch-connections.mdx
+- [x] hooks/connections/use-fetch-connections-by-user-id.mdx
+- [x] hooks/connections/use-fetch-connections-count.mdx
+- [x] hooks/connections/use-fetch-connections-count-by-user-id.mdx
+- [x] hooks/connections/use-fetch-connection-status.mdx
+- [x] hooks/connections/use-fetch-sent-pending-connections.mdx
+- [x] hooks/connections/use-fetch-received-pending-connections.mdx
 
 ## Hooks Reference — App Notifications
 
-- [ ] hooks/app-notifications/use-app-notifications.mdx
+- [x] hooks/app-notifications/use-app-notifications.mdx
 
 ## Hooks Reference — Reports
 
-- [ ] hooks/reports/use-create-report.mdx
-- [ ] hooks/reports/use-fetch-moderated-reports.mdx
-- [ ] hooks/reports/use-handle-space-entity-report.mdx
-- [ ] hooks/reports/use-handle-space-comment-report.mdx
+- [x] hooks/reports/use-create-report.mdx
+- [x] hooks/reports/use-fetch-moderated-reports.mdx
+- [x] hooks/reports/use-handle-space-entity-report.mdx
+- [x] hooks/reports/use-handle-space-comment-report.mdx
 
 ## Hooks Reference — Search
 
-- [ ] hooks/search/use-search-content.mdx
-- [ ] hooks/search/use-search-users.mdx
-- [ ] hooks/search/use-search-spaces.mdx
-- [ ] hooks/search/use-ask-content.mdx
+- [x] hooks/search/use-search-content.mdx
+- [x] hooks/search/use-search-users.mdx
+- [x] hooks/search/use-search-spaces.mdx
+- [x] hooks/search/use-ask-content.mdx
 
 ## Hooks Reference — Spaces
 
@@ -296,8 +297,8 @@
 
 ## Hooks Reference — Storage
 
-- [ ] hooks/storage/use-upload-file.mdx
-- [ ] hooks/storage/use-upload-image.mdx
+- [x] hooks/storage/use-upload-file.mdx
+- [x] hooks/storage/use-upload-image.mdx
 
 ## Hooks Reference — Current User
 
@@ -315,8 +316,8 @@
 
 ## API Reference — Getting Started
 
-- [ ] api-reference/getting-started.mdx
-- [ ] api-reference/authentication.mdx
+- [x] api-reference/getting-started.mdx
+- [x] api-reference/authentication.mdx
 
 ## API Reference — Auth
 
@@ -328,6 +329,9 @@
 - [x] api-reference/auth/verify-external-user.mdx
 - [x] api-reference/auth/request-password-reset.mdx
 - [x] api-reference/auth/reset-password.mdx
+- [x] api-reference/auth/send-verification-email.mdx
+- [x] api-reference/auth/verify-email.mdx
+- [x] api-reference/auth/verify-email-link.mdx
 
 ## API Reference — OAuth
 
@@ -338,85 +342,84 @@
 
 ## API Reference — Users
 
-- [ ] api-reference/users/fetch-user.mdx
-- [ ] api-reference/users/fetch-user-by-foreign-id.mdx
-- [ ] api-reference/users/fetch-user-by-username.mdx
-- [ ] api-reference/users/fetch-user-suggestions.mdx
-- [ ] api-reference/users/check-username-availability.mdx
-- [ ] api-reference/users/update-user.mdx
+- [x] api-reference/users/fetch-user.mdx
+- [x] api-reference/users/fetch-user-by-foreign-id.mdx
+- [x] api-reference/users/fetch-user-by-username.mdx
+- [x] api-reference/users/fetch-user-suggestions.mdx
+- [x] api-reference/users/check-username-availability.mdx
+- [x] api-reference/users/update-user.mdx
 
 ## API Reference — User Follow Operations
 
-- [ ] api-reference/users/follows/follow-user.mdx
-- [ ] api-reference/users/follows/get-follow-status.mdx
-- [ ] api-reference/users/follows/get-followers.mdx
-- [ ] api-reference/users/follows/get-followers-count.mdx
-- [ ] api-reference/users/follows/get-following.mdx
-- [ ] api-reference/users/follows/get-following-count.mdx
-- [ ] api-reference/users/follows/unfollow-user.mdx
+- [x] api-reference/users/follows/follow-user.mdx
+- [x] api-reference/users/follows/get-follow-status.mdx
+- [x] api-reference/users/follows/get-followers.mdx
+- [x] api-reference/users/follows/get-followers-count.mdx
+- [x] api-reference/users/follows/get-following.mdx
+- [x] api-reference/users/follows/get-following-count.mdx
+- [x] api-reference/users/follows/unfollow-user.mdx
 
 ## API Reference — User Connection Operations
 
-- [ ] api-reference/users/connections/request-connection.mdx
-- [ ] api-reference/users/connections/get-connection-status.mdx
-- [ ] api-reference/users/connections/get-connections.mdx
-- [ ] api-reference/users/connections/get-connections-count.mdx
-- [ ] api-reference/users/connections/remove-connection.mdx
+- [x] api-reference/users/connections/request-connection.mdx
+- [x] api-reference/users/connections/get-connection-status.mdx
+- [x] api-reference/users/connections/get-connections.mdx
+- [x] api-reference/users/connections/get-connections-count.mdx
+- [x] api-reference/users/connections/remove-connection.mdx
 
 ## API Reference — Follow Endpoints
 
-- [ ] api-reference/follows/fetch-following.mdx
-- [ ] api-reference/follows/fetch-followers.mdx
-- [ ] api-reference/follows/fetch-following-count.mdx
-- [ ] api-reference/follows/fetch-followers-count.mdx
-- [ ] api-reference/follows/delete-follow.mdx
+- [x] api-reference/follows/fetch-following.mdx
+- [x] api-reference/follows/fetch-followers.mdx
+- [x] api-reference/follows/fetch-following-count.mdx
+- [x] api-reference/follows/fetch-followers-count.mdx
+- [x] api-reference/follows/delete-follow.mdx
 
 ## API Reference — Connection Endpoints
 
-- [ ] api-reference/connections/fetch-connections.mdx
-- [ ] api-reference/connections/fetch-connections-count.mdx
-- [ ] api-reference/connections/fetch-sent-pending.mdx
-- [ ] api-reference/connections/fetch-received-pending.mdx
-- [ ] api-reference/connections/accept-connection.mdx
-- [ ] api-reference/connections/decline-connection.mdx
-- [ ] api-reference/connections/remove-connection.mdx
+- [x] api-reference/connections/fetch-connections.mdx
+- [x] api-reference/connections/fetch-connections-count.mdx
+- [x] api-reference/connections/fetch-sent-pending.mdx
+- [x] api-reference/connections/fetch-received-pending.mdx
+- [x] api-reference/connections/accept-connection.mdx
+- [x] api-reference/connections/decline-connection.mdx
+- [x] api-reference/connections/remove-connection.mdx
 
 ## API Reference — Entities
 
-- [ ] api-reference/entities/create-entity.mdx
-- [ ] api-reference/entities/fetch-entity.mdx
-- [ ] api-reference/entities/fetch-entity-by-foreign-id.mdx
-- [ ] api-reference/entities/fetch-entity-by-short-id.mdx
-- [ ] api-reference/entities/fetch-many-entities.mdx
-- [ ] api-reference/entities/fetch-drafts.mdx
-- [ ] api-reference/entities/publish-entity.mdx
-- [ ] api-reference/entities/fetch-top-comment.mdx
-- [ ] api-reference/entities/update-entity.mdx
-- [ ] api-reference/entities/delete-entity.mdx
-- [ ] api-reference/entities/upvote-entity.mdx
-- [ ] api-reference/entities/downvote-entity.mdx
-- [ ] api-reference/entities/remove-entity-upvote.mdx
-- [ ] api-reference/entities/remove-entity-downvote.mdx
-- [ ] api-reference/entities/add-reaction.mdx
-- [ ] api-reference/entities/remove-reaction.mdx
-- [ ] api-reference/entities/fetch-reactions.mdx
-- [ ] api-reference/entities/increment-views.mdx
+- [x] api-reference/entities/create-entity.mdx
+- [x] api-reference/entities/fetch-entity.mdx
+- [x] api-reference/entities/fetch-entity-by-foreign-id.mdx
+- [x] api-reference/entities/fetch-entity-by-short-id.mdx
+- [x] api-reference/entities/fetch-many-entities.mdx
+- [x] api-reference/entities/fetch-drafts.mdx
+- [x] api-reference/entities/publish-entity.mdx
+- [x] api-reference/entities/fetch-top-comment.mdx
+- [x] api-reference/entities/update-entity.mdx
+- [x] api-reference/entities/delete-entity.mdx
+- [x] api-reference/entities/upvote-entity.mdx
+- [x] api-reference/entities/downvote-entity.mdx
+- [x] api-reference/entities/remove-entity-upvote.mdx
+- [x] api-reference/entities/remove-entity-downvote.mdx
+- [x] api-reference/entities/add-reaction.mdx
+- [x] api-reference/entities/remove-reaction.mdx
+- [x] api-reference/entities/fetch-reactions.mdx
 
 ## API Reference — Comments
 
-- [ ] api-reference/comments/create-comment.mdx
-- [ ] api-reference/comments/fetch-comment.mdx
-- [ ] api-reference/comments/fetch-comment-by-foreign-id.mdx
-- [ ] api-reference/comments/fetch-many-comments.mdx
-- [ ] api-reference/comments/update-comment.mdx
-- [ ] api-reference/comments/delete-comment.mdx
-- [ ] api-reference/comments/upvote-comment.mdx
-- [ ] api-reference/comments/downvote-comment.mdx
-- [ ] api-reference/comments/remove-comment-upvote.mdx
-- [ ] api-reference/comments/remove-comment-downvote.mdx
-- [ ] api-reference/comments/add-reaction.mdx
-- [ ] api-reference/comments/remove-reaction.mdx
-- [ ] api-reference/comments/fetch-reactions.mdx
+- [x] api-reference/comments/create-comment.mdx
+- [x] api-reference/comments/fetch-comment.mdx
+- [x] api-reference/comments/fetch-comment-by-foreign-id.mdx
+- [x] api-reference/comments/fetch-many-comments.mdx
+- [x] api-reference/comments/update-comment.mdx
+- [x] api-reference/comments/delete-comment.mdx
+- [x] api-reference/comments/upvote-comment.mdx
+- [x] api-reference/comments/downvote-comment.mdx
+- [x] api-reference/comments/remove-comment-upvote.mdx
+- [x] api-reference/comments/remove-comment-downvote.mdx
+- [x] api-reference/comments/add-reaction.mdx
+- [x] api-reference/comments/remove-reaction.mdx
+- [x] api-reference/comments/fetch-reactions.mdx
 
 ## API Reference — Chat: Conversations
 
@@ -450,34 +453,34 @@
 
 ## API Reference — Collections
 
-- [ ] api-reference/collections/fetch-root.mdx
-- [ ] api-reference/collections/is-entity-saved.mdx
-- [ ] api-reference/collections/create-sub-collection.mdx
-- [ ] api-reference/collections/fetch-sub-collections.mdx
-- [ ] api-reference/collections/fetch-entities.mdx
-- [ ] api-reference/collections/add-entity.mdx
-- [ ] api-reference/collections/remove-entity.mdx
-- [ ] api-reference/collections/update-collection.mdx
-- [ ] api-reference/collections/delete-collection.mdx
+- [x] api-reference/collections/fetch-root.mdx
+- [x] api-reference/collections/is-entity-saved.mdx
+- [x] api-reference/collections/create-sub-collection.mdx
+- [x] api-reference/collections/fetch-sub-collections.mdx
+- [x] api-reference/collections/fetch-entities.mdx
+- [x] api-reference/collections/add-entity.mdx
+- [x] api-reference/collections/remove-entity.mdx
+- [x] api-reference/collections/update-collection.mdx
+- [x] api-reference/collections/delete-collection.mdx
 
 ## API Reference — App Notifications
 
-- [ ] api-reference/app-notifications/fetch-notifications.mdx
-- [ ] api-reference/app-notifications/count-unread.mdx
-- [ ] api-reference/app-notifications/mark-as-read.mdx
-- [ ] api-reference/app-notifications/mark-all-as-read.mdx
+- [x] api-reference/app-notifications/fetch-notifications.mdx
+- [x] api-reference/app-notifications/count-unread.mdx
+- [x] api-reference/app-notifications/mark-as-read.mdx
+- [x] api-reference/app-notifications/mark-all-as-read.mdx
 
 ## API Reference — Reports
 
-- [ ] api-reference/reports/create-report.mdx
-- [ ] api-reference/reports/fetch-moderated-reports.mdx
+- [x] api-reference/reports/create-report.mdx
+- [x] api-reference/reports/fetch-moderated-reports.mdx
 
 ## API Reference — Search
 
-- [ ] api-reference/search/search-content.mdx
-- [ ] api-reference/search/search-users.mdx
-- [ ] api-reference/search/search-spaces.mdx
-- [ ] api-reference/search/ask.mdx
+- [x] api-reference/search/search-content.mdx
+- [x] api-reference/search/search-users.mdx
+- [x] api-reference/search/search-spaces.mdx
+- [x] api-reference/search/ask.mdx
 
 ## API Reference — Spaces
 
@@ -532,36 +535,36 @@
 
 ## API Reference — Storage
 
-- [ ] api-reference/storage/upload-image.mdx
-- [ ] api-reference/storage/upload-file.mdx
-- [ ] api-reference/storage/fetch-file.mdx
-- [ ] api-reference/storage/delete-file.mdx
+- [x] api-reference/storage/upload-image.mdx
+- [x] api-reference/storage/upload-file.mdx
+- [x] api-reference/storage/fetch-file.mdx
+- [x] api-reference/storage/delete-file.mdx
 
 ## API Reference — Utils
 
-- [ ] api-reference/utils/get-metadata.mdx
+- [x] api-reference/utils/get-metadata.mdx
 
 ## API Reference — Crypto
 
-- [ ] api-reference/crypto/sign-testing-jwt.mdx
+- [x] api-reference/crypto/sign-testing-jwt.mdx
 
 ## Data Models
 
-- [ ] data-models/user.mdx
-- [ ] data-models/entity.mdx
-- [ ] data-models/comment.mdx
+- [x] data-models/user.mdx
+- [x] data-models/entity.mdx
+- [x] data-models/comment.mdx
 - [x] data-models/space.mdx
 - [x] data-models/space-member.mdx
 - [x] data-models/conversation.mdx
 - [x] data-models/conversation-member.mdx
 - [x] data-models/chat-message.mdx
-- [ ] data-models/collection.mdx
-- [ ] data-models/rule.mdx
-- [ ] data-models/reaction.mdx
-- [ ] data-models/file.mdx
-- [ ] data-models/follow.mdx
-- [ ] data-models/connection.mdx
-- [ ] data-models/app-notification.mdx
+- [x] data-models/collection.mdx
+- [x] data-models/rule.mdx
+- [x] data-models/reaction.mdx
+- [x] data-models/file.mdx
+- [x] data-models/follow.mdx
+- [x] data-models/connection.mdx
+- [x] data-models/app-notification.mdx
 
 ## Components — Overview
 

@@ -28,6 +28,7 @@
       },
       {
         "tab": "SDK Reference",
+        "url": "sdk/getting-started",
         "groups": [
           {
             "group": "Setup",
@@ -47,15 +48,10 @@
             ]
           },
           {
-            "group": "Current User",
+            "group": "Users",
             "pages": [
-              "sdk/current-user/overview"
-            ]
-          },
-          {
-            "group": "User Profiles",
-            "pages": [
-              "sdk/user-profiles/overview"
+              "sdk/users/current-user",
+              "sdk/users/user-profiles"
             ]
           },
           {
@@ -159,7 +155,14 @@
       },
       {
         "tab": "Hooks Reference",
+        "url": "hooks/overview",
         "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "hooks/overview"
+            ]
+          },
           {
             "group": "Auth Hooks",
             "pages": [
@@ -170,68 +173,28 @@
               "hooks/auth/use-switch-account",
               "hooks/auth/use-sign-out-all",
               "hooks/auth/use-oauth-identities",
-              "hooks/auth/use-request-password-reset"
+              "hooks/auth/use-oauth-sign-in",
+              "hooks/auth/use-request-password-reset",
+              "hooks/auth/use-send-verification-email",
+              "hooks/auth/use-verify-email"
             ]
           },
           {
-            "group": "Chat — Conversations",
+            "group": "Current User",
             "pages": [
-              "hooks/chat/conversations/use-conversations",
-              "hooks/chat/conversations/use-conversation",
-              "hooks/chat/conversations/use-create-direct-conversation",
-              "hooks/chat/conversations/use-conversation-members",
-              "hooks/chat/conversations/use-space-conversation"
+              "hooks/user/use-user",
+              "hooks/user/use-user-actions"
             ]
           },
           {
-            "group": "Chat — Messages",
+            "group": "User Profiles",
             "pages": [
-              "hooks/chat/messages/use-chat-messages",
-              "hooks/chat/messages/use-send-message",
-              "hooks/chat/messages/use-edit-message",
-              "hooks/chat/messages/use-delete-message",
-              "hooks/chat/messages/use-toggle-reaction",
-              "hooks/chat/messages/use-message-thread"
-            ]
-          },
-          {
-            "group": "Chat — Core",
-            "pages": [
-              "hooks/chat/use-chat-socket",
-              "hooks/chat/use-mark-conversation-as-read",
-              "hooks/chat/use-report-message",
-              "hooks/chat/use-total-unread-count",
-              "hooks/chat/use-typing-indicator",
-              "hooks/chat/use-unread-conversation-count"
-            ]
-          },
-          {
-            "group": "Collections",
-            "pages": [
-              "hooks/collections/use-collections",
-              "hooks/collections/use-collections-actions",
-              "hooks/collections/use-collection-entities-wrapper",
-              "hooks/collections/use-is-entity-saved"
-            ]
-          },
-          {
-            "group": "Comments",
-            "pages": [
-              "hooks/comments/use-comment-section",
-              "hooks/comments/use-entity-comments",
-              "hooks/comments/use-replies",
-              "hooks/comments/use-create-comment",
-              "hooks/comments/use-update-comment",
-              "hooks/comments/use-delete-comment",
-              "hooks/comments/use-fetch-comment",
-              "hooks/comments/use-fetch-comment-by-foreign-id",
-              "hooks/comments/use-fetch-many-comments"
-            ]
-          },
-          {
-            "group": "Crypto",
-            "pages": [
-              "hooks/crypto/use-sign-testing-jwt"
+              "hooks/users/use-fetch-user",
+              "hooks/users/use-fetch-user-by-foreign-id",
+              "hooks/users/use-fetch-user-by-username",
+              "hooks/users/use-fetch-user-suggestions",
+              "hooks/users/use-check-username-availability",
+              "hooks/users/use-user-mentions"
             ]
           },
           {
@@ -242,12 +205,12 @@
               "hooks/entities/use-fetch-entity-by-foreign-id",
               "hooks/entities/use-fetch-entity-by-short-id",
               "hooks/entities/use-fetch-many-entities",
+              "hooks/entities/use-fetch-many-entities-wrapper",
               "hooks/entities/use-create-entity",
               "hooks/entities/use-update-entity",
               "hooks/entities/use-delete-entity",
               "hooks/entities/use-fetch-drafts",
-              "hooks/entities/use-publish-draft",
-              "hooks/entities/use-increment-entity-views"
+              "hooks/entities/use-publish-draft"
             ]
           },
           {
@@ -256,76 +219,6 @@
               "hooks/entity-lists/use-entity-list",
               "hooks/entity-lists/use-entity-list-actions",
               "hooks/entity-lists/use-infused-data"
-            ]
-          },
-          {
-            "group": "Reactions",
-            "pages": [
-              "hooks/reactions/use-add-reaction",
-              "hooks/reactions/use-remove-reaction",
-              "hooks/reactions/use-reaction-toggle",
-              "hooks/reactions/use-fetch-entity-reactions",
-              "hooks/reactions/use-fetch-comment-reactions"
-            ]
-          },
-          {
-            "group": "Follows",
-            "pages": [
-              "hooks/follows/use-follow-manager",
-              "hooks/follows/use-follow-user",
-              "hooks/follows/use-unfollow-by-follow-id",
-              "hooks/follows/use-unfollow-user-by-user-id",
-              "hooks/follows/use-fetch-follow-status",
-              "hooks/follows/use-fetch-followers",
-              "hooks/follows/use-fetch-followers-by-user-id",
-              "hooks/follows/use-fetch-followers-count",
-              "hooks/follows/use-fetch-followers-count-by-user-id",
-              "hooks/follows/use-fetch-following",
-              "hooks/follows/use-fetch-following-by-user-id",
-              "hooks/follows/use-fetch-following-count",
-              "hooks/follows/use-fetch-following-count-by-user-id"
-            ]
-          },
-          {
-            "group": "Connections",
-            "pages": [
-              "hooks/connections/use-connection-manager",
-              "hooks/connections/use-request-connection",
-              "hooks/connections/use-accept-connection",
-              "hooks/connections/use-decline-connection",
-              "hooks/connections/use-remove-connection",
-              "hooks/connections/use-remove-connection-by-user-id",
-              "hooks/connections/use-fetch-connections",
-              "hooks/connections/use-fetch-connections-by-user-id",
-              "hooks/connections/use-fetch-connections-count",
-              "hooks/connections/use-fetch-connections-count-by-user-id",
-              "hooks/connections/use-fetch-connection-status",
-              "hooks/connections/use-fetch-sent-pending-connections",
-              "hooks/connections/use-fetch-received-pending-connections"
-            ]
-          },
-          {
-            "group": "App Notifications",
-            "pages": [
-              "hooks/app-notifications/use-app-notifications"
-            ]
-          },
-          {
-            "group": "Reports",
-            "pages": [
-              "hooks/reports/use-create-report",
-              "hooks/reports/use-fetch-moderated-reports",
-              "hooks/reports/use-handle-space-entity-report",
-              "hooks/reports/use-handle-space-comment-report"
-            ]
-          },
-          {
-            "group": "Search",
-            "pages": [
-              "hooks/search/use-search-content",
-              "hooks/search/use-search-users",
-              "hooks/search/use-search-spaces",
-              "hooks/search/use-ask-content"
             ]
           },
           {
@@ -380,6 +273,137 @@
             ]
           },
           {
+            "group": "Comments",
+            "pages": [
+              "hooks/comments/use-comment-section",
+              "hooks/comments/use-entity-comments",
+              "hooks/comments/use-replies",
+              "hooks/comments/use-create-comment",
+              "hooks/comments/use-update-comment",
+              "hooks/comments/use-delete-comment",
+              "hooks/comments/use-fetch-comment",
+              "hooks/comments/use-fetch-comment-by-foreign-id",
+              "hooks/comments/use-fetch-many-comments",
+              "hooks/comments/use-fetch-many-comments-wrapper"
+            ]
+          },
+          {
+            "group": "Reactions",
+            "pages": [
+              "hooks/reactions/use-add-reaction",
+              "hooks/reactions/use-remove-reaction",
+              "hooks/reactions/use-reaction-toggle",
+              "hooks/reactions/use-fetch-entity-reactions",
+              "hooks/reactions/use-fetch-entity-reactions-wrapper",
+              "hooks/reactions/use-fetch-comment-reactions",
+              "hooks/reactions/use-fetch-comment-reactions-wrapper"
+            ]
+          },
+          {
+            "group": "Follows",
+            "pages": [
+              "hooks/follows/use-follow-manager",
+              "hooks/follows/use-follow-user",
+              "hooks/follows/use-unfollow-by-follow-id",
+              "hooks/follows/use-unfollow-user-by-user-id",
+              "hooks/follows/use-fetch-follow-status",
+              "hooks/follows/use-fetch-followers",
+              "hooks/follows/use-fetch-followers-by-user-id",
+              "hooks/follows/use-fetch-followers-count",
+              "hooks/follows/use-fetch-followers-count-by-user-id",
+              "hooks/follows/use-fetch-following",
+              "hooks/follows/use-fetch-following-by-user-id",
+              "hooks/follows/use-fetch-following-count",
+              "hooks/follows/use-fetch-following-count-by-user-id"
+            ]
+          },
+          {
+            "group": "Connections",
+            "pages": [
+              "hooks/connections/use-connection-manager",
+              "hooks/connections/use-request-connection",
+              "hooks/connections/use-accept-connection",
+              "hooks/connections/use-decline-connection",
+              "hooks/connections/use-remove-connection",
+              "hooks/connections/use-remove-connection-by-user-id",
+              "hooks/connections/use-fetch-connections",
+              "hooks/connections/use-fetch-connections-by-user-id",
+              "hooks/connections/use-fetch-connections-count",
+              "hooks/connections/use-fetch-connections-count-by-user-id",
+              "hooks/connections/use-fetch-connection-status",
+              "hooks/connections/use-fetch-sent-pending-connections",
+              "hooks/connections/use-fetch-received-pending-connections"
+            ]
+          },
+          {
+            "group": "Collections",
+            "pages": [
+              "hooks/collections/use-collections",
+              "hooks/collections/use-collections-actions",
+              "hooks/collections/use-collection-entities-wrapper",
+              "hooks/collections/use-is-entity-in-collection"
+            ]
+          },
+          {
+            "group": "App Notifications",
+            "pages": [
+              "hooks/app-notifications/use-app-notifications"
+            ]
+          },
+          {
+            "group": "Chat — Conversations",
+            "pages": [
+              "hooks/chat/conversations/use-conversations",
+              "hooks/chat/conversations/use-conversation",
+              "hooks/chat/conversations/use-fetch-conversation",
+              "hooks/chat/conversations/use-update-conversation",
+              "hooks/chat/conversations/use-delete-conversation",
+              "hooks/chat/conversations/use-create-direct-conversation",
+              "hooks/chat/conversations/use-conversation-members",
+              "hooks/chat/conversations/use-fetch-space-conversation"
+            ]
+          },
+          {
+            "group": "Chat — Messages",
+            "pages": [
+              "hooks/chat/messages/use-chat-messages",
+              "hooks/chat/messages/use-send-message",
+              "hooks/chat/messages/use-edit-message",
+              "hooks/chat/messages/use-delete-message",
+              "hooks/chat/messages/use-toggle-reaction",
+              "hooks/chat/messages/use-message-thread"
+            ]
+          },
+          {
+            "group": "Chat — Core",
+            "pages": [
+              "hooks/chat/use-chat-socket",
+              "hooks/chat/use-mark-conversation-as-read",
+              "hooks/chat/use-report-message",
+              "hooks/chat/use-total-unread-count",
+              "hooks/chat/use-typing-indicator",
+              "hooks/chat/use-unread-conversation-count"
+            ]
+          },
+          {
+            "group": "Search",
+            "pages": [
+              "hooks/search/use-search-content",
+              "hooks/search/use-search-users",
+              "hooks/search/use-search-spaces",
+              "hooks/search/use-ask-content"
+            ]
+          },
+          {
+            "group": "Reports",
+            "pages": [
+              "hooks/reports/use-create-report",
+              "hooks/reports/use-fetch-moderated-reports",
+              "hooks/reports/use-handle-space-entity-report",
+              "hooks/reports/use-handle-space-comment-report"
+            ]
+          },
+          {
             "group": "Storage",
             "pages": [
               "hooks/storage/use-upload-file",
@@ -387,27 +411,22 @@
             ]
           },
           {
-            "group": "Current User Hooks",
+            "group": "Crypto",
             "pages": [
-              "hooks/user/use-user",
-              "hooks/user/use-user-actions"
+              "hooks/crypto/use-sign-testing-jwt"
             ]
           },
           {
-            "group": "User Profile Hooks",
+            "group": "Project",
             "pages": [
-              "hooks/users/use-fetch-user",
-              "hooks/users/use-fetch-user-by-foreign-id",
-              "hooks/users/use-fetch-user-by-username",
-              "hooks/users/use-fetch-user-suggestions",
-              "hooks/users/use-check-username-availability",
-              "hooks/users/use-user-mentions"
+              "hooks/project/use-project"
             ]
           }
         ]
       },
       {
         "tab": "API Reference",
+        "url": "api-reference/getting-started",
         "groups": [
           {
             "group": "Getting Started",
@@ -426,7 +445,10 @@
               "api-reference/auth/request-access-token",
               "api-reference/auth/verify-external-user",
               "api-reference/auth/request-password-reset",
-              "api-reference/auth/reset-password"
+              "api-reference/auth/reset-password",
+              "api-reference/auth/send-verification-email",
+              "api-reference/auth/verify-email",
+              "api-reference/auth/verify-email-link"
             ]
           },
           {
@@ -512,8 +534,7 @@
               "api-reference/entities/remove-entity-downvote",
               "api-reference/entities/add-reaction",
               "api-reference/entities/remove-reaction",
-              "api-reference/entities/fetch-reactions",
-              "api-reference/entities/increment-views"
+              "api-reference/entities/fetch-reactions"
             ]
           },
           {
@@ -695,6 +716,7 @@
       },
       {
         "tab": "Data Models",
+        "url": "data-models/user",
         "groups": [
           {
             "group": "Models",
@@ -704,11 +726,11 @@
               "data-models/comment",
               "data-models/space",
               "data-models/space-member",
+              "data-models/rule",
               "data-models/conversation",
               "data-models/conversation-member",
               "data-models/chat-message",
               "data-models/collection",
-              "data-models/rule",
               "data-models/reaction",
               "data-models/file",
               "data-models/follow",
@@ -720,6 +742,7 @@
       },
       {
         "tab": "Components",
+        "url": "components/overview",
         "groups": [
           {
             "group": "Overview",

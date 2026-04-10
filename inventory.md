@@ -816,7 +816,7 @@ Note: The OAuth callback is handled at `GET /v7/oauth/callback` (separate route,
 | DELETE | `/entities/:entityId/reactions` | Required | Remove a reaction from an entity |
 | GET | `/entities/:entityId/reactions` | None | Fetch reactions on an entity |
 | GET | `/entities/:entityId/reactions/me` | Required | Get current user's reaction on an entity |
-| PATCH | `/entities/:entityId/increment-views` | None | Increment the view count |
+| PATCH | `/entities/:entityId/increment-views` | Service key | Manually increment the view count (views are also auto-incremented on fetch) |
 | PATCH | `/entities/:entityId` | Required | Update an entity |
 | DELETE | `/entities/:entityId` | Required | Delete an entity |
 
@@ -1040,7 +1040,6 @@ All hooks live in `monorepo/packages/core/src/hooks/`.
 | `useDeleteEntity` | Delete an entity |
 | `useFetchDrafts` | Fetch current user's draft entities |
 | `usePublishDraft` | Publish a draft entity |
-| `useIncrementEntityViews` | Increment view count |
 
 ---
 

@@ -47,7 +47,7 @@ description: "Authenticate a user with email and password"
 
 Best example from v6: `docs/api-reference/auth/sign-in.mdx`
 
-```mdx
+````mdx
 ---
 title: "Sign In"
 api: "POST /:projectId/api/v7/auth/sign-in"
@@ -93,7 +93,7 @@ One-sentence description that restates the endpoint's purpose with any important
     ```
   </Accordion>
 </AccordionGroup>
-```
+````
 
 ### ParamField attributes
 
@@ -116,7 +116,7 @@ One-sentence description that restates the endpoint's purpose with any important
 
 Best example from v6: `docs/hooks/users/use-fetch-user.mdx`
 
-```mdx
+````mdx
 ---
 title: "useFetchUser"
 description: "Fetch a user's public profile by their ID"
@@ -156,7 +156,7 @@ The hook returns a function. That function accepts:
 <ResponseField name="User" type="User">
   The public profile of the fetched user. See [User data model](/data-models/user).
 </ResponseField>
-```
+````
 
 ### Notes on hook pages
 - If a hook is a context hook (returns state, not a callable function), describe the return values as state fields, not as a function's return.
@@ -172,7 +172,7 @@ The hook returns a function. That function accepts:
 
 These pages explain how to use a feature end-to-end. They cover multiple hooks together in a narrative flow.
 
-```mdx
+````mdx
 ---
 title: "Setting Up Chat"
 description: "Configure ChatProvider and ConversationProvider for real-time messaging"
@@ -219,7 +219,7 @@ Brief intro paragraph explaining what this guide covers and what the developer w
     Send and receive messages
   </Card>
 </CardGroup>
-```
+````
 
 ---
 
@@ -269,7 +269,7 @@ When a message quotes another, the `quotedMessage` field contains:
 
 For feature overview pages in the SDK Reference tab or the top-level Overview tab.
 
-```mdx
+````mdx
 ---
 title: "Spaces"
 description: "Build community spaces with membership, permissions, moderation, and chat"
@@ -305,7 +305,7 @@ Explanation of the main provider/hook pattern used for this feature.
 ## What's Next
 
 Link to the first implementation page.
-```
+````
 
 ---
 
@@ -360,7 +360,7 @@ Icons come from Font Awesome. Common choices: `bolt`, `users`, `shield`, `envelo
 
 ### Accordion Groups (for error responses)
 
-```mdx
+````mdx
 <AccordionGroup>
   <Accordion title="Not Found — 404">
     ```json
@@ -368,11 +368,11 @@ Icons come from Font Awesome. Common choices: `bolt`, `users`, `shield`, `envelo
     ```
   </Accordion>
 </AccordionGroup>
-```
+````
 
 ### Code Groups (for multi-language examples)
 
-```mdx
+````mdx
 <CodeGroup>
   ```tsx React
   import { useSendMessage } from "@replyke/react-js";
@@ -382,7 +382,7 @@ Icons come from Font Awesome. Common choices: `bolt`, `users`, `shield`, `envelo
   import { useSendMessage } from "@replyke/react-native";
   ```
 </CodeGroup>
-```
+````
 
 ---
 
