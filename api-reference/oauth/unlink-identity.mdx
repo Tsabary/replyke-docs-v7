@@ -8,6 +8,12 @@ Unlinks an OAuth identity from the authenticated user's account. The identity is
 
 Requires a valid access token. The identity must belong to the authenticated user.
 
+## Headers
+
+<ParamField header="Authorization" type="string" required>
+  `Bearer {accessToken}` — a valid access token for the authenticated user.
+</ParamField>
+
 ## Path Parameters
 
 <ParamField path="identityId" type="string" required>

@@ -10,13 +10,17 @@ Exchanges a valid refresh token for a new access token and a new refresh token. 
 
 <ParamField body="refreshToken" type="string">
   The refresh token JWT. If omitted or `null`, the server returns `200` with
-  `{ user: null, accessToken: null }` — indicating no active session.
+  `{ user: null, accessToken: null }` — indicating no active session. The
+  `success` and `refreshToken` fields are absent in this case.
 </ParamField>
 
 ## Response
 
+When a valid refresh token is provided, the response is:
+
 <ResponseField name="success" type="boolean">
   `true` when a valid refresh token was provided and a new session was issued.
+  This field is absent when no refresh token was submitted.
 </ResponseField>
 
 <ResponseField name="accessToken" type="string | null">
@@ -24,9 +28,9 @@ Exchanges a valid refresh token for a new access token and a new refresh token. 
   token was provided.
 </ResponseField>
 
-<ResponseField name="refreshToken" type="string | null">
-  New long-lived JWT refresh token (rotated). Expires in 30 days. `null` if no
-  refresh token was provided.
+<ResponseField name="refreshToken" type="string">
+  New long-lived JWT refresh token (rotated). Expires in 30 days. This field is
+  absent when no refresh token was provided.
 </ResponseField>
 
 <ResponseField name="user" type="object | null">

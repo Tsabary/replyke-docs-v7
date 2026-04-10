@@ -8,6 +8,12 @@ Returns all OAuth identities linked to the authenticated user's account, ordered
 
 Requires a valid access token.
 
+## Headers
+
+<ParamField header="Authorization" type="string" required>
+  `Bearer {accessToken}` — a valid access token for the authenticated user.
+</ParamField>
+
 ## Response
 
 <ResponseField name="identities" type="OAuthIdentity[]">
