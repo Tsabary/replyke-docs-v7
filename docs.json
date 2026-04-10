@@ -429,7 +429,7 @@
         "url": "api-reference/getting-started",
         "groups": [
           {
-            "group": "Getting Started",
+            "group": "Overview",
             "pages": [
               "api-reference/getting-started",
               "api-reference/authentication"
