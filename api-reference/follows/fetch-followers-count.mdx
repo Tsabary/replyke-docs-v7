@@ -1,8 +1,19 @@
 ---
 title: "Fetch Followers Count"
-description: "Get the current user's follower count"
+api: "GET /:projectId/api/v7/follows/followers-count"
+description: "Get the number of followers the authenticated user has"
 ---
 
-# Fetch Followers Count
+Returns the total number of users following the authenticated user.
 
-*Coming soon*
+## Response
+
+On success, returns HTTP `200`:
+
+<ResponseField name="count" type="number">
+  Total number of users following the authenticated user.
+</ResponseField>
+
+## See Also
+
+- [`useFetchFollowersCount` hook](/hooks/follows/use-fetch-followers-count)

@@ -1,8 +1,19 @@
 ---
 title: "Fetch Connections Count"
-description: "Get the current user's connection count"
+api: "GET /:projectId/api/v7/connections/count"
+description: "Get the number of accepted connections for the authenticated user"
 ---
 
-# Fetch Connections Count
+Returns the total number of accepted connections for the authenticated user.
 
-*Coming soon*
+## Response
+
+On success, returns HTTP `200`:
+
+<ResponseField name="count" type="number">
+  Total number of accepted connections for the authenticated user.
+</ResponseField>
+
+## See Also
+
+- [`useFetchConnectionsCount` hook](/hooks/connections/use-fetch-connections-count)
