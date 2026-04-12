@@ -58,11 +58,12 @@ function SpaceDirectory() {
   ```ts
   fetchSpaces(
     filters: {
-      sortBy: "newest" | "oldest" | "most_members" | "least_members";
+      sortBy?: "newest" | "oldest" | "most_members" | "least_members";
       searchSlug?: string | null;
       searchName?: string | null;
       searchDescription?: string | null;
       searchAny?: string | null;
+      readingPermission?: "anyone" | "members" | null;
       memberOf?: boolean;
       parentSpaceId?: string | null;
     },
@@ -78,18 +79,54 @@ function SpaceDirectory() {
 
 <ResponseField name="createSpace" type="function">
   Create a new space and insert it into the list.
+
+  ```ts
+  createSpace(props: {
+    name: string;
+    slug?: string | null;
+    description?: string | null;
+    avatar?: string | null;
+    banner?: string | null;
+    readingPermission?: "anyone" | "members";
+    postingPermission?: "anyone" | "members" | "admins";
+    requireJoinApproval?: boolean;
+    metadata?: Record<string, any>;
+    parentSpaceId?: string | null;
+    insertPosition?: "first" | "last";
+  }) => Promise<Space | undefined>
+  ```
 </ResponseField>
 
 <ResponseField name="deleteSpace" type="function">
   Delete a space and remove it from the list.
+
+  ```ts
+  deleteSpace(props: { spaceId: string }) => Promise<void>
+  ```
 </ResponseField>
 
 <ResponseField name="sortBy" type="string | null">
   Current sort setting from Redux state.
 </ResponseField>
 
+<ResponseField name="searchSlug" type="string | null">
+  Current slug search query from Redux state.
+</ResponseField>
+
+<ResponseField name="searchName" type="string | null">
+  Current name search query from Redux state.
+</ResponseField>
+
+<ResponseField name="searchDescription" type="string | null">
+  Current description search query from Redux state.
+</ResponseField>
+
 <ResponseField name="searchAny" type="string | null">
-  Current search query from Redux state.
+  Current general search query from Redux state.
+</ResponseField>
+
+<ResponseField name="readingPermission" type='"anyone" | "members" | null'>
+  Current reading permission filter from Redux state.
 </ResponseField>
 
 <ResponseField name="memberOf" type="boolean">

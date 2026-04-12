@@ -30,11 +30,11 @@ function CustomSpaceLoader({ listId }: { listId: string }) {
 
 ## Methods
 
-<ResponseField name="fetchSpaces" type="(listId: string, params: FetchParams) => Promise<void>">
+<ResponseField name="fetchSpaces" type="(listId: string, params: FetchParams) => Promise<Space[] | null>">
   Fetch spaces for the given list. Updates Redux state with the results.
 </ResponseField>
 
-<ResponseField name="createSpace" type="(listId: string, props: CreateSpaceProps) => Promise<Space>">
+<ResponseField name="createSpace" type="(listId: string, props: CreateSpaceProps) => Promise<Space | undefined>">
   Create a space and insert it into the given list's state.
 </ResponseField>
 
