@@ -91,7 +91,7 @@ function UserFeed({ userId }: { userId: string }) {
 </ParamField>
 
 <ParamField body="defaultSortType" type="SortType" optional>
-  Initial sort algorithm. Options: `"auto"`, `"standard"`, `"hot"`. Default: `"auto"`.
+  Initial sort algorithm. Options: `"auto"`, `"numeric"`, `"text"`, `"boolean"`, `"timestamp"`. Used when sorting by a metadata field. Default: `"auto"`.
 </ParamField>
 
 <ParamField body="timeFrame" type="TimeFrame | null" optional>

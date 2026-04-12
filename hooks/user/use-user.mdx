@@ -103,7 +103,7 @@ function AvatarUpload({ file }: { file: File }) {
       Arbitrary project-specific data. Limited to 10 KB. Visible to other users (embedded in entity and comment data).
     </ResponseField>
     <ResponseField name="secureMetadata" type="Record<string, any>">
-      Same as `metadata` but excluded from other users' views. Only the authenticated user can see their own `secureMetadata`.
+      Private custom fields excluded from all client-facing responses, including the authenticated user's own profile. Stored server-side only — use it for data you need to persist but never expose to any client.
     </ResponseField>
   </Expandable>
 </ResponseField>

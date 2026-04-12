@@ -62,14 +62,22 @@ function DraftsList() {
   Array of draft entities for the current page.
 </ResponseField>
 
-<ResponseField name="total" type="number">
-  Total count of the user's drafts.
-</ResponseField>
-
-<ResponseField name="page" type="number">
+<ResponseField name="pagination.page" type="number">
   Current page number.
 </ResponseField>
 
-<ResponseField name="limit" type="number">
-  Results per page.
+<ResponseField name="pagination.pageSize" type="number">
+  Number of results per page.
+</ResponseField>
+
+<ResponseField name="pagination.totalPages" type="number">
+  Total number of pages.
+</ResponseField>
+
+<ResponseField name="pagination.totalItems" type="number">
+  Total count of the user's drafts.
+</ResponseField>
+
+<ResponseField name="pagination.hasMore" type="boolean">
+  `true` if there are additional pages available.
 </ResponseField>

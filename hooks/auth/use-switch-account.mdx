@@ -68,8 +68,9 @@ The hook returns a `switchAccount` function that accepts:
 
 <ResponseField name="switchAccount" type="function">
   Async function that switches the active session. Calling it with the ID of
-  the already-active account is a no-op. Throws if the account is not found or
-  no `projectId` is available.
+  the already-active account is a no-op. Throws synchronously if the account is
+  not found or no `projectId` is available. Runtime errors (e.g. token refresh
+  failure) are caught and surfaced via the `error` field instead of throwing.
 </ResponseField>
 
 <ResponseField name="isSwitching" type="boolean">
