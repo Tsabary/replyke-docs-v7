@@ -17,7 +17,7 @@ function EditRuleForm({ spaceId, ruleId }: { spaceId: string; ruleId: string }) 
   const updateRule = useUpdateRule();
 
   const handleSave = async (title: string, description: string) => {
-    const updated = await updateRule({ spaceId, ruleId, title, description });
+    const updated = await updateRule({ spaceId, ruleId, update: { title, description } });
     console.log("Updated:", updated.title);
   };
 }
@@ -33,12 +33,18 @@ function EditRuleForm({ spaceId, ruleId }: { spaceId: string; ruleId: string }) 
   UUID of the rule to update.
 </ParamField>
 
-<ParamField path="title" type="string">
-  Updated title.
-</ParamField>
+<ParamField path="update" type="object" required>
+  Object containing the fields to update. All fields are optional.
 
-<ParamField path="description" type="string | null">
-  Updated description. Pass `null` to clear.
+  <Expandable title="update fields">
+    <ParamField path="update.title" type="string">
+      Updated title.
+    </ParamField>
+
+    <ParamField path="update.description" type="string | null">
+      Updated description. Pass `null` to clear.
+    </ParamField>
+  </Expandable>
 </ParamField>
 
 ## Returns

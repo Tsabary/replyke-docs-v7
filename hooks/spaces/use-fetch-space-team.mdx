@@ -17,8 +17,8 @@ function SpaceTeam({ spaceId }: { spaceId: string }) {
   const fetchTeam = useFetchSpaceTeam();
 
   const loadTeam = async () => {
-    const { team } = await fetchTeam({ spaceId });
-    team.forEach(({ user, role }) => {
+    const { data } = await fetchTeam({ spaceId });
+    data.forEach(({ user, role }) => {
       console.log(user.displayName, role);
     });
   };
@@ -33,6 +33,6 @@ function SpaceTeam({ spaceId }: { spaceId: string }) {
 
 ## Returns
 
-<ResponseField name="team" type="SpaceMemberWithUser[]">
+<ResponseField name="data" type="SpaceMemberWithUser[]">
   All admins and moderators with active status, including embedded user details. See [SpaceMember](/data-models/space-member).
 </ResponseField>
