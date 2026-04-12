@@ -67,14 +67,11 @@ Returns a `PaginatedResponse` containing an array of established connections:
     <ResponseField name="connectedAt" type="string">
       ISO timestamp when the connection was established.
     </ResponseField>
-    <ResponseField name="requestedAt" type="string">
-      ISO timestamp when the request was originally sent.
-    </ResponseField>
   </Expandable>
 </ResponseField>
 
 <ResponseField name="pagination" type="object">
-  Pagination metadata including `currentPage`, `totalPages`, `totalCount`, `hasNextPage`, and `hasPreviousPage`.
+  Pagination metadata including `page`, `pageSize`, `totalPages`, `totalItems`, and `hasMore`.
 </ResponseField>
 
 ## Related
