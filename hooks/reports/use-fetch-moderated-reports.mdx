@@ -47,8 +47,8 @@ function ModerationQueue({ spaceId }: { spaceId: string }) {
   Filter by target type.
 </ParamField>
 
-<ParamField body="status" type="string">
-  Filter by report status. One of: `pending`, `on-hold`, `escalated`, `dismissed`, `actioned`.
+<ParamField body="status" type='"pending" | "on-hold" | "escalated" | "dismissed" | "actioned"'>
+  Filter by report status.
 </ParamField>
 
 <ParamField body="sortBy" type='"new" | "old"'>
@@ -95,3 +95,4 @@ Returns `Promise<PaginatedResponse<Report>>`:
 <ResponseField name="space" type="Space | null">The space the reported content belongs to.</ResponseField>
 <ResponseField name="createdAt" type="Date">When the first report for this target was submitted.</ResponseField>
 <ResponseField name="updatedAt" type="Date">When the report record was last updated.</ResponseField>
+<ResponseField name="deletedAt" type="Date | null">Soft-delete timestamp. `null` if the report has not been deleted.</ResponseField>

@@ -16,7 +16,6 @@ If the same target has already been reported, the user's report is appended to t
 
 ```tsx
 import { useCreateReport } from "@replyke/react-js";
-import { reportReasons } from "@replyke/core";
 
 function ReportEntityButton({ entityId }: { entityId: string }) {
   const createEntityReport = useCreateReport({ type: "entity" });

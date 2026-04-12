@@ -48,10 +48,8 @@ function ConversationHeader({ conversationId }: { conversationId: string }) {
   `true` while the initial fetch is in progress.
 </ResponseField>
 
-<ResponseField name="update" type="(params: UpdateConversationParams) => Promise<Conversation | undefined>">
-  Updates the conversation. Dispatches the updated conversation to Redux on success.
-
-  `UpdateConversationParams`:
+<ResponseField name="update" type="(params: { name?: string; description?: string; avatarFileId?: string | null; postingPermission?: 'members' | 'admins' }) => Promise<Conversation | undefined>">
+  Updates the conversation. Dispatches the updated conversation to Redux on success. `conversationId` is already bound from the hook props and should not be passed here.
 
   | Field | Type | Description |
   |-------|------|-------------|

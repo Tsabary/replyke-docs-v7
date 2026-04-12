@@ -81,7 +81,7 @@ function AccountSwitcher() {
           {account.name}
           {account.id !== activeAccount?.id && (
             <button
-              onClick={() => switchAccount(account.id)}
+              onClick={() => switchAccount({ userId: account.id })}
               disabled={isSwitching}
             >
               Switch
@@ -107,7 +107,7 @@ function RemoveAccountButton({ userId }: { userId: string }) {
 
   return (
     <>
-      <button onClick={() => removeAccount(userId)} disabled={isRemoving}>
+      <button onClick={() => removeAccount({ userId })} disabled={isRemoving}>
         Remove Account
       </button>
       {error && <p>{error}</p>}
