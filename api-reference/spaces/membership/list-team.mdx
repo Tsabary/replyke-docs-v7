@@ -1,8 +1,21 @@
 ---
 title: "List Space Team"
-description: "Get admins and moderators of a space"
+api: "GET /:projectId/api/v7/spaces/:spaceId/team"
+description: "Get all admins and moderators of a space"
 ---
 
-# List Space Team
+Returns all admins and moderators of a space in a single non-paginated response.
 
-*Coming soon*
+## Path Parameters
+
+<ParamField path="spaceId" type="string" required>
+  UUID of the space.
+</ParamField>
+
+## Response
+
+<ResponseField name="data" type="SpaceMemberWithUser[]">
+  Array of [SpaceMemberWithUser](/data-models/space-member) objects with `role` of `"admin"` or `"moderator"` and `status` of `"active"`.
+</ResponseField>
+
+See also: [useFetchSpaceTeam](/hooks/spaces/use-fetch-space-team)
