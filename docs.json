@@ -528,13 +528,10 @@
               "api-reference/entities/fetch-top-comment",
               "api-reference/entities/update-entity",
               "api-reference/entities/delete-entity",
-              "api-reference/entities/upvote-entity",
-              "api-reference/entities/downvote-entity",
-              "api-reference/entities/remove-entity-upvote",
-              "api-reference/entities/remove-entity-downvote",
               "api-reference/entities/add-reaction",
               "api-reference/entities/remove-reaction",
-              "api-reference/entities/fetch-reactions"
+              "api-reference/entities/fetch-reactions",
+              "api-reference/entities/get-user-reaction"
             ]
           },
           {
@@ -546,13 +543,10 @@
               "api-reference/comments/fetch-many-comments",
               "api-reference/comments/update-comment",
               "api-reference/comments/delete-comment",
-              "api-reference/comments/upvote-comment",
-              "api-reference/comments/downvote-comment",
-              "api-reference/comments/remove-comment-upvote",
-              "api-reference/comments/remove-comment-downvote",
               "api-reference/comments/add-reaction",
               "api-reference/comments/remove-reaction",
-              "api-reference/comments/fetch-reactions"
+              "api-reference/comments/fetch-reactions",
+              "api-reference/comments/get-user-reaction"
             ]
           },
           {
