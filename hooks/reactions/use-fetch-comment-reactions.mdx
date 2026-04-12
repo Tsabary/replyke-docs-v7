@@ -52,9 +52,15 @@ function CommentLikers({ commentId }: { commentId: string }) {
 ## Returns
 
 <ResponseField name="data" type="Reaction[]">
-  Array of reaction records for this comment.
+  Array of reaction records. Each includes `id`, `userId`, `reactionType`, `targetId`, `targetType`, `createdAt`. The `user` field is populated when user data is available.
 </ResponseField>
 
-<ResponseField name="pagination.hasMore" type="boolean">
-  Whether there are more pages.
+<ResponseField name="pagination" type="PaginationMetadata">
+  Pagination metadata for the result set.
+
+  - `page` — current page number
+  - `pageSize` — number of results returned
+  - `totalItems` — total number of reactions matching the query
+  - `totalPages` — total number of pages
+  - `hasMore` — whether additional pages are available
 </ResponseField>
