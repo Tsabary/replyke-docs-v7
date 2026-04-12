@@ -52,6 +52,10 @@ function PostComment({ entityId }: { entityId: string }) {
   Your own ID to associate with this comment.
 </ParamField>
 
+<ParamField path="referencedCommentId" type="string">
+  ID of a comment being referenced/quoted in this comment.
+</ParamField>
+
 <ParamField path="mentions" type="Mention[]">
   Users or spaces mentioned in the comment content.
 </ParamField>
