@@ -210,7 +210,8 @@
               "hooks/entities/use-update-entity",
               "hooks/entities/use-delete-entity",
               "hooks/entities/use-fetch-drafts",
-              "hooks/entities/use-publish-draft"
+              "hooks/entities/use-publish-draft",
+              "hooks/entities/use-is-entity-saved"
             ]
           },
           {
@@ -340,8 +341,7 @@
             "pages": [
               "hooks/collections/use-collections",
               "hooks/collections/use-collections-actions",
-              "hooks/collections/use-collection-entities-wrapper",
-              "hooks/collections/use-is-entity-in-collection"
+              "hooks/collections/use-collection-entities-wrapper"
             ]
           },
           {
@@ -531,7 +531,8 @@
               "api-reference/entities/add-reaction",
               "api-reference/entities/remove-reaction",
               "api-reference/entities/fetch-reactions",
-              "api-reference/entities/get-user-reaction"
+              "api-reference/entities/get-user-reaction",
+              "api-reference/entities/is-entity-saved"
             ]
           },
           {
@@ -589,7 +590,6 @@
             "group": "Collection Endpoints",
             "pages": [
               "api-reference/collections/fetch-root",
-              "api-reference/collections/is-entity-saved",
               "api-reference/collections/create-sub-collection",
               "api-reference/collections/fetch-sub-collections",
               "api-reference/collections/fetch-entities",
